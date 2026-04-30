@@ -122,8 +122,11 @@
 - Can I explain the invariant?
 - Can I implement cleanly in <15 min?
 
+---
 
-🔴 Beginner
-🟡 Learning
-🟢 Comfortable
-🔵 Mastered
+## Legend
+
+- 🔵 Mastered
+- 🟢 Comfortable
+- 🟡 Learning
+- 🔴 Beginner

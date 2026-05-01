@@ -19,29 +19,34 @@
 ## Core Concepts
 
 ### Scalability & Architecture
+
 - Horizontal vs Vertical Scaling
 - Stateless vs Stateful Systems
 - Microservices vs Monoliths
 
 ### Data Storage
+
 - SQL vs NoSQL tradeoffs
 - Database sharding
 - Replication strategies
 - Indexing fundamentals
 
 ### Caching
+
 - Cache-aside pattern
 - Write-through vs write-back
 - Cache invalidation strategies
 - CDN usage
 
 ### Distributed Systems Basics
+
 - Consistency models (strong vs eventual)
 - CAP theorem
 - Fault tolerance
 - Idempotency
 
 ### Performance & Traffic Handling
+
 - Load balancing (L4 vs L7)
 - Rate limiting strategies
 - Backpressure handling

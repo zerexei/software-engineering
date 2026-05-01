@@ -5,6 +5,7 @@ This repository is my long-term **backend engineering second brain**.
 It is not a course notebook, not interview prep, and not project storage.
 
 It is a structured system for:
+
 - thinking in backend systems
 - retaining engineering patterns
 - documenting decisions and tradeoffs
@@ -45,9 +46,11 @@ engineering/
 # 00_core-principles
 
 ## Purpose
+
 Fundamental laws that apply across all systems.
 
 ## Examples
+
 - Consistency models (strong vs eventual)
 - CAP theorem
 - Latency vs throughput tradeoffs
@@ -55,6 +58,7 @@ Fundamental laws that apply across all systems.
 - Idempotency
 
 ## Rule
+
 These are not solutions.  
 They are **constraints under which all systems operate.**
 
@@ -63,9 +67,11 @@ They are **constraints under which all systems operate.**
 # 01_patterns
 
 ## Purpose
+
 Reusable solutions to recurring backend problems.
 
 ## Examples
+
 - Caching
 - Queue-based processing
 - Rate limiting
@@ -88,9 +94,11 @@ Each pattern should include:
 # 02_systems
 
 ## Purpose
+
 Full system designs (end-to-end architectures).
 
 ## Examples
+
 - URL Shortener
 - Chat system
 - Feed system
@@ -114,9 +122,11 @@ Each system should include:
 # 03_decisions
 
 ## Purpose
+
 Record of engineering judgment calls.
 
 ## Examples
+
 - Why Redis over in-memory cache?
 - SQL vs NoSQL decision
 - Queue vs direct processing
@@ -137,9 +147,11 @@ Each entry must include:
 # 04_failure-modes
 
 ## Purpose
+
 Understand how systems break in reality.
 
 ## Examples
+
 - Cache stampede
 - Thundering herd problem
 - DB connection exhaustion
@@ -162,9 +174,11 @@ Each failure mode should include:
 # 05_playbooks
 
 ## Purpose
+
 Execution frameworks for engineering work.
 
 ## Examples
+
 - Designing a backend system in 45 minutes
 - Debugging production issues
 - API design checklist
@@ -172,6 +186,7 @@ Execution frameworks for engineering work.
 - System review checklist
 
 ## Rule
+
 These should feel like **mental scripts used in real work situations**.
 
 ---
@@ -181,18 +196,23 @@ These should feel like **mental scripts used in real work situations**.
 This repo is updated continuously as I:
 
 ### DSA work
+
 - extract patterns → store in /01_patterns
 
 ### System design work
+
 - design systems → store in /02_systems
 
 ### Engineering decisions
+
 - log tradeoffs → store in /03_decisions
 
 ### Real failures / bugs
+
 - document breakdowns → store in /04_failure-modes
 
 ### Repeated workflows
+
 - convert into playbooks → /05_playbooks
 
 ---

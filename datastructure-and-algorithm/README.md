@@ -3,6 +3,7 @@
 ## Progress Overview
 
 ### Arrays / Strings / Hashing
+
 - Arrays & Strings
   - Problems: 0
   - Status: 🔵 Mastered
@@ -14,6 +15,7 @@
 ---
 
 ### Patterns (Two Pointers / Sliding Window / Prefix Sum / Binary Search)
+
 - Two Pointers
   - Problems: 0
   - Status: 🔵 Mastered
@@ -33,6 +35,7 @@
 ---
 
 ### Data Structures (Linear + Hierarchical)
+
 - Stack / Queue
   - Problems: 0
   - Status: 🟢 Comfortable
@@ -56,6 +59,7 @@
 ---
 
 ### Algorithms
+
 - Sorting Algorithms
   - Problems: 0
   - Status: 🟢 Comfortable
@@ -79,6 +83,7 @@
 ---
 
 ### Advanced Data Structures / Patterns
+
 - Bit Manipulation
   - Problems: 0
   - Status: 🔴 Beginner
@@ -102,6 +107,7 @@
 ---
 
 ## Goals
+
 - Focus on pattern mastery, not problem count
 - Be able to explain and implement from scratch
 - Build reusable mental templates
@@ -109,6 +115,7 @@
 ---
 
 ## Study Method
+
 1. Solve problem (struggle allowed)
 2. Rewrite clean solution
 3. Repeat next day (no help)
@@ -118,6 +125,7 @@
 ---
 
 ## Metrics I Track
+
 - Can I solve without hints?
 - Can I explain the invariant?
 - Can I implement cleanly in <15 min?

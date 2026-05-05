@@ -111,6 +111,13 @@ GET /endpoint/:id
 
 ## Status
 
-❌ Not clear
-⚠️ Partial
-✅ Can explain end-to-end
+- 🟡 Learning
+
+---
+
+## Legend
+
+- 🔴 Beginner
+- 🟡 Learning
+- 🟢 Comfortable
+- 🔵 Mastered

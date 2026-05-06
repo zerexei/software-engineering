@@ -174,6 +174,7 @@ constraints:
 - if x exists then return index
 - if x doesnt exists then return -1
 
+edge cases:
 - empty arr
 - if dup exists: validate duplicate (analyzed constraint)
 

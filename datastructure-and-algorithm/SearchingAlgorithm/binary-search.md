@@ -110,3 +110,80 @@ def binary_search_last(arr, x):
 - 🟡 Learning
 - 🟢 Comfortable
 - 🔵 Mastered
+
+
+
+
+```py
+"""
+You’re given a sorted array of integers
+arr of size n and a target value x.
+Write a function that uses binary search
+to determine the index of x in the array.
+
+If x exists in the array, return its index.
+If it does not exist, return -1.
+
+Assume the array is sorted in ascending order
+and contains no duplicate values.
+"""
+
+def binary_search(arr, x):
+    left = 0
+    right = len(arr) - 1
+    
+    while left <= right:
+        middle = (left + right) // 2
+        print(left, right, middle)
+        
+        if arr[middle] == x:
+            return middle
+            
+            # first_occurance: right = mid + 1
+            # last_occurance: left = mid - 1
+            
+        if arr[middle] < x:
+            left = middle + 1
+        else:
+            right = middle - 1
+    
+    return -1
+
+
+# Sample Test Case
+arr = [1, 3, 5, 7, 9, 11, 13, 15]
+x = 15
+
+result = binary_search(arr, x)
+print(result)  # Expected output: 3
+
+
+
+"""
+
+variables:
+- sorted array of integers
+- sorted is accending order
+- no duplicate values
+- arr size of n
+- target value x
+- use binary search
+- get the index of x in the array
+
+constraints:
+- if x exists then return index
+- if x doesnt exists then return -1
+
+- empty arr
+- if dup exists: validate duplicate (analyzed constraint)
+
+
+how to write the logic
+1. divide and conquer
+2. left and right indices
+3. compare the middle to target
+4. then check if middle is less or greater than target
+5. if it's less than then we use the right indices else we use the left indices
+6. repeat until target is found or no more indices to check
+"""
+```

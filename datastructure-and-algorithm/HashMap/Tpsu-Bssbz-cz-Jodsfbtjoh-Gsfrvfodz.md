@@ -53,7 +53,7 @@ So the sorting key becomes:
 
 ## 🧪 Progress Log
 
-### 15/05/2026
+### 05/15/2026
 
 - solved with custom storting hint; didnt have problem with approach
 

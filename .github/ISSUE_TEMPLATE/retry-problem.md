@@ -21,20 +21,7 @@ Easy / Medium / Hard
 ## Pattern
 (e.g. Hash Map + Sorting)
 
-## Complexity
-- Time: O(?)
-- Space: O(?)
-
 ## Core Idea
 (1–2 lines max)
-
-## Mistake
-(what went wrong, if any)
-
-## Status
-- [ ] Retry
-- [ ] Learning
-- [ ] Comfortable
-- [ ] Mastered
 
 ## Repo Link

@@ -1,3 +1,74 @@
+# Problem: 15. 3Sum
+
+## Pattern
+
+Two Pointers + Sorting
+
+## Difficulty
+
+Medium
+
+## Core Idea
+
+Sort the array first. Fix one number at a time, then use two pointers
+(left and right) to find the remaining two numbers whose sum equals
+the negative of the fixed number.
+
+Because the array is sorted, if the current sum is too small we move
+the left pointer rightward, and if the sum is too large we move the
+right pointer leftward.
+
+Skip duplicate values to avoid generating duplicate triplets.
+
+## Invariant
+
+- The array remains sorted throughout the search.
+- `i < left < right`, so indices are always unique.
+- Every triplet added to the result sums to zero.
+- Duplicate triplets are skipped.
+
+## When to Use This Pattern
+
+- Need unique pairs/triplets that satisfy a target sum.
+- Input can be sorted or sorting is acceptable.
+- Brute force O(n³) is too expensive.
+
+## Complexity
+
+- Time: O(n²)
+- Space: O(1) excluding output
+
+## Common Pitfalls
+
+- Forgetting to skip duplicate values for `i`.
+- Forgetting to skip duplicate values after finding a valid triplet.
+- Using separate `if` statements instead of `if / elif / else`.
+- Confusing duplicate indices with duplicate triplets.
+
+## Variations to Try
+
+- 3Sum Closest
+- 4Sum
+- Two Sum II (Sorted Array)
+- Count triplets with sum smaller than target
+
+## 🧪 Progress Log
+
+### 06/02/2026
+
+- correct approach and intuition but forgot to implement optimized solution
+
+## Status
+
+- 🟢 Comfortable
+
+## Legend
+
+- 🔴 Beginner
+- 🟡 Learning
+- 🟢 Comfortable
+- 🔵 Mastered
+
 ```py
 """
 problem:
@@ -74,74 +145,3 @@ class Solution:
 
         return res
 ```
-
-# Problem: 15. 3Sum
-
-## Pattern
-
-Two Pointers + Sorting
-
-## Difficulty
-
-Medium
-
-## Core Idea
-
-Sort the array first. Fix one number at a time, then use two pointers
-(left and right) to find the remaining two numbers whose sum equals
-the negative of the fixed number.
-
-Because the array is sorted, if the current sum is too small we move
-the left pointer rightward, and if the sum is too large we move the
-right pointer leftward.
-
-Skip duplicate values to avoid generating duplicate triplets.
-
-## Invariant
-
-- The array remains sorted throughout the search.
-- `i < left < right`, so indices are always unique.
-- Every triplet added to the result sums to zero.
-- Duplicate triplets are skipped.
-
-## When to Use This Pattern
-
-- Need unique pairs/triplets that satisfy a target sum.
-- Input can be sorted or sorting is acceptable.
-- Brute force O(n³) is too expensive.
-
-## Complexity
-
-- Time: O(n²)
-- Space: O(1) excluding output
-
-## Common Pitfalls
-
-- Forgetting to skip duplicate values for `i`.
-- Forgetting to skip duplicate values after finding a valid triplet.
-- Using separate `if` statements instead of `if / elif / else`.
-- Confusing duplicate indices with duplicate triplets.
-
-## Variations to Try
-
-- 3Sum Closest
-- 4Sum
-- Two Sum II (Sorted Array)
-- Count triplets with sum smaller than target
-
-## 🧪 Progress Log
-
-### 06/02/2026
-
-- correct approach and intuition but forgot to implement optimized solution
-
-## Status
-
-- 🟢 Comfortable
-
-## Legend
-
-- 🔴 Beginner
-- 🟡 Learning
-- 🟢 Comfortable
-- 🔵 Mastered

@@ -57,9 +57,12 @@ So the sorting key becomes:
 
 - solved with custom storting hint; didnt have problem with approach
 
+### 2026-06-03
+- solve w/out hints
+
 ## Status
 
-- 🟡 Learning
+- 🟢 Comfortable
 
 ## Legend
 

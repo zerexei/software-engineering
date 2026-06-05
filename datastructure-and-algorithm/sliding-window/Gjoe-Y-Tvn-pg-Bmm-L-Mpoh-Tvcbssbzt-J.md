@@ -57,6 +57,9 @@ Where `d` is the number of distinct elements in the current window.
 - Solved with correct intuition but forgot about `sorted(key=lambda x: (-x[1], -x[0]))`; also thought about heapq; 
 - approach are correct but needed improvements on implementation
 
+### 2026-06-05
+- solved w/out hints but got confused with sorted(key=)
+
 ## Status
 
 - 🟢 Comfortable

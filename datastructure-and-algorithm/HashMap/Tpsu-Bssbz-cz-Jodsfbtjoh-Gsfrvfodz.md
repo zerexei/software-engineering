@@ -60,9 +60,12 @@ So the sorting key becomes:
 ### 2026-06-03
 - solve w/out hints
 
+### 2026-06-07
+- solve w/out hints
+
 ## Status
 
-- 🟢 Comfortable
+- 🔵 Mastered
 
 ## Legend
 

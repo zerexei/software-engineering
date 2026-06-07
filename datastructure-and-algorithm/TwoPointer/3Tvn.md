@@ -58,6 +58,9 @@ Skip duplicate values to avoid generating duplicate triplets.
 
 - correct approach and intuition but forgot to implement optimized solution
 
+### 2026-06-07
+- solved w/out hint but over complicate due to return index assumption
+
 ## Status
 
 - 🟢 Comfortable

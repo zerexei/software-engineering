@@ -76,9 +76,11 @@ class Solution:
 
 ### 06/04/2026
 
-- solved w/out hits but needed help with area computation
+- solved w/out hints but needed help with area computation
 
-
+### 06/09/2026
+- solved w/out hints and learned why "right - left", 1 more
+  
 ## Status
 
 - 🔵 Mastered

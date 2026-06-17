@@ -18,10 +18,10 @@ Complete one issue at a time.
 If tests fail:
 - attempt fixes
 - after 3 failed attempts mark the Task stuck
-- create ${STUCK_FILE} with issue number and reason
+- create .agent-stuck with issue number and reason
 
 If no issues remain:
-- create ${SUCCESS_FILE}
+- create .agent-complete
 - exit
 
 Commit changes:

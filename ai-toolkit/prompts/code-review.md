@@ -16,7 +16,9 @@ Review code changes and identify quality issues.
    - maintainability issues
    - breaking changes
 
-4. Report findings clearly.
+4. Write findings to:
+   - .agent-review.md
+     
 5. Include:
    - file and location
    - problem description
@@ -33,9 +35,3 @@ If review is complete:
 
 If blocked:
 - create .agent-stuck with reason
-
-Commit changes:
-
-REVIEW: <short description>
-
-Mark the review completed.

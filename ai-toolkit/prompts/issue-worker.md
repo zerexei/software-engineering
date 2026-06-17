@@ -1,28 +1,30 @@
 # Issue Worker
 
-Goal:
+## Goal
+
 Complete one issue at a time.
 
-Instructions:
+## Instructions
 
-1. Use github-issues to fetch open issues.
-2. Check existing tasks.
-3. Skip issues already completed or in_progress.
-4. Select one appropriate issue.
-5. Create a task and mark it in_progress.
-6. Implement the fix.
-7. Add tests when needed.
-8. Run formatting.
-9. Run the test suite.
+1. Use github-issues skill to fetch open issues.
+2. Check existing Tasks and skip issues already completed or in_progress.
+3. Pick the most appropriate remaining issue.
+4. Create a Task and mark it in_progress.
+5. Implement the fix or feature.
+6. Add tests if needed.
+7. Run formatting.
+8. Run the full test suite.
 
-If no work remains:
-create .complete
+If tests fail:
+- attempt fixes
+- after 3 failed attempts mark the Task stuck
+- create ${STUCK_FILE} with issue number and reason
 
-If blocked:
-create .stuck with the reason.
+If no issues remain:
+- create ${SUCCESS_FILE}
+- exit
 
-Commit format:
+Commit changes:
+ISSUE #<number>: <short description>
 
-ISSUE #<number>: <description>
-
-Mark the task completed.
+Mark the Task completed.

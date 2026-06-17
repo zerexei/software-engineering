@@ -10,9 +10,10 @@ ITERATIONS="${1:-10}"
 MAIN_BRANCH="${MAIN_BRANCH:-main}"
 BRANCH="${BRANCH:-overnight-batch-$(date +%Y%m%d-%H%M%S)}"
 
-$SUCCESS_FILE=".agent-complete"
-$STUCK_FILE=".agent-stuck"
+PROMPT_FILE="prompts/issue-worker.md"
 
+SUCCESS_FILE=".agent-complete"
+STUCK_FILE=".agent-stuck"
 
 #-------------------------
 # Helpers
@@ -31,6 +32,11 @@ if ! command -v claude >/dev/null 2>&1; then
     exit 1
 fi
 
+if [ ! -f "$PROMPT_FILE" ]; then
+    echo "Prompt file missing: $PROMPT_FILE"
+    exit 1
+fi
+
 if [ -n "$(git status --porcelain)" ]; then
     echo "Working directory is dirty. Commit or stash changes first."
     exit 1
@@ -46,6 +52,7 @@ git checkout -b "$BRANCH"
 
 echo "Branch: $BRANCH"
 echo "Iterations: $ITERATIONS"
+echo "Prompt: $PROMPT_FILE"
 
 #-------------------------
 # Agent Loop
@@ -55,7 +62,7 @@ for ((i=1; i<=ITERATIONS; i++)); do
     echo
     echo "=== Iteration $i/$ITERATIONS ==="
 
-    claude -p --dangerously-skip-permissions "$(cat )"
+    claude -p --dangerously-skip-permissions "$(cat "$PROMPT_FILE")"
 
     if [ -f "$STUCK_FILE" ]; then
         echo "Agent stuck:"

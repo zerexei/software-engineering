@@ -18,7 +18,7 @@ Instructions:
 5. Run tests.
 
 If everything looks good:
-create .complete
+create .agent-complete
 
 If blocked:
-create .stuck with reason.
+create .agent-stuck with reason.

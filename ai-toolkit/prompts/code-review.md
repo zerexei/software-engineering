@@ -1,24 +1,41 @@
 # Code Review
 
-Goal:
-Review code quality and find issues.
+## Goal
 
-Instructions:
+Review code changes and identify quality issues.
+
+## Instructions
 
 1. Inspect recent changes.
-2. Look for:
+2. Understand the intended behavior before reviewing.
+3. Look for:
    - bugs
    - security issues
    - performance problems
    - missing tests
-   - bad patterns
+   - maintainability issues
+   - breaking changes
 
-3. Suggest fixes.
-4. Implement fixes when appropriate.
-5. Run tests.
+4. Report findings clearly.
+5. Include:
+   - file and location
+   - problem description
+   - suggested improvement
 
-If everything looks good:
-create .agent-complete
+6. Run tests when needed to validate findings.
+
+Stay focused on the reviewed changes.
+Avoid modifying code.
+
+If review is complete:
+- create .agent-complete
+- exit
 
 If blocked:
-create .agent-stuck with reason.
+- create .agent-stuck with reason
+
+Commit changes:
+
+REVIEW: <short description>
+
+Mark the review completed.

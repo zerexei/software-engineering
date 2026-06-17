@@ -1,0 +1,31 @@
+flowchart LR
+    A[Start] --> B{Dependencies OK?}
+
+    B -->|No| C[Exit]
+    B -->|Yes| D{Git Clean?}
+
+    D -->|No| C
+    D -->|Yes| E[Checkout Main]
+
+    E --> F[Pull Latest]
+    F --> G[Create Branch]
+
+    G --> H[Run AI Loop]
+
+    H --> I{.stuck exists?}
+    I -->|Yes| J[Print Error]
+    J --> K[Exit Failed]
+
+    I -->|No| L{.complete exists?}
+
+    L -->|Yes| M[Stop Loop]
+    L -->|No| N{Iterations Left?}
+
+    N -->|Yes| H
+    N -->|No| M
+
+    M --> O[Push Branch]
+
+    O --> P[Review Changes]
+
+    P --> Q[Done]

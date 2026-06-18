@@ -19,33 +19,34 @@ This project is a production-ready backend API built with FastAPI. The architect
 ## Project Structure
 
 ```text
-pyproject.toml
-src/
-├── __init__.py
-├── main.py
-├── config.py
-├── database.py
-│
-├── auth/
+app/
+├── pyproject.toml
+├── src/
 │   ├── __init__.py
-│   ├── router.py
-│   ├── schemas.py
-│   ├── models.py
-│   ├── service.py
-│   └── dependencies.py
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   │
+│   ├── auth/
+│   │   ├── __init__.py
+│   │   ├── router.py
+│   │   ├── schemas.py
+│   │   ├── models.py
+│   │   ├── service.py
+│   │   └── dependencies.py
+│   │
+│   ├── users/
+│   │   ├── __init__.py
+│   │   ├── router.py
+│   │   ├── schemas.py
+│   │   ├── models.py
+│   │   └── service.py
+│   │
+│   └── shared/
+│       ├── __init__.py
+│       └── exceptions.py
 │
-├── users/
-│   ├── __init__.py
-│   ├── router.py
-│   ├── schemas.py
-│   ├── models.py
-│   └── service.py
-│
-└── shared/
-    ├── __init__.py
-    └── exceptions.py
-
-tests/
+└── tests/
     └── test_main.py
 ```
 

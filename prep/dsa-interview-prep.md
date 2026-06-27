@@ -82,7 +82,6 @@
 
 ### Important Notes
 
-- One of Google's favorite patterns.
 - Usually paired with hash maps.
 
 ### Problems
@@ -225,7 +224,6 @@
 
 ### Important Notes
 
-- One of Google's most frequently tested topics.
 - Know when to choose DFS vs. BFS.
 - Multi-source BFS is useful when traversal starts from multiple nodes simultaneously.
 

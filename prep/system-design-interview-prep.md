@@ -1,16 +1,5 @@
 # System Design Interview Prep
 
-## System Design Interview Template
-
-```
-1. Clarify Requirements
-2. High-Level Design
-3. Data Model
-4. Scale the System
-5. Handle Bottlenecks
-6. Discuss Trade-offs
-```
-
 ## Topic: System Design Fundamentals
 
 ### Core Concepts
@@ -269,3 +258,14 @@
 - [ ] Design Uber
 - [ ] Design Netflix
 - [ ] Design Google Drive
+
+## System Design Interview Template
+
+```
+1. Clarify Requirements
+2. High-Level Design
+3. Data Model
+4. Scale the System
+5. Handle Bottlenecks
+6. Discuss Trade-offs
+```

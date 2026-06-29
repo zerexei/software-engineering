@@ -1,11 +1,17 @@
 ---
 name: design-system
-description: "Use when building or modifying pages, components, templates, or UI styles in this repository. Prefer the existing CSS design system and Tailwind CSS v4 semantic tokens."
+description: 'Use when building or modifying pages, components, templates, or UI styles in this repository. Prefer the existing CSS design system and Tailwind CSS v4 semantic tokens.'
 ---
 
 # Design System Guide
 
 This project uses a **CSS-first design system** with Tailwind CSS v4. Reuse the existing design system whenever possible instead of creating new styles.
+
+The project's design system is defined here:
+
+- <DESIGN_SYSTEM_PATH>
+
+If unavailable, locate the project's design system by inspecting existing CSS, components, and layouts.
 
 ## Workflow
 

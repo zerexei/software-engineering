@@ -1,6 +1,6 @@
 ---
 name: design-system
-description: 'Use when building or modifying pages, components, templates, or UI styles in this repository. Prefer the existing CSS design system and Tailwind CSS v4 semantic tokens.'
+description: "Use when building or modifying pages, components, templates, or UI styles in this repository. Prefer the existing CSS design system and Tailwind CSS v4 semantic tokens."
 ---
 
 # Design System Guide
@@ -9,7 +9,7 @@ This project uses a **CSS-first design system** with Tailwind CSS v4. Reuse the 
 
 The project's design system is defined here:
 
-- <DESIGN_SYSTEM_PATH>
+- src/css
 
 If unavailable, locate the project's design system by inspecting existing CSS, components, and layouts.
 
@@ -23,6 +23,10 @@ Follow this order when generating UI:
 4. Create new CSS only if no existing component can satisfy the requirement.
 
 Do not recreate existing components using Tailwind utilities.
+
+## Tailwind CSS Guidelines
+
+Design System Overrides: If Tailwind CSS utilities must override a strict design system class, append the ! modifier (or the important: prefix) to ensure the utility takes precedence.
 
 ## Existing Components
 

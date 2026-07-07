@@ -2,51 +2,51 @@
 
 ## Purpose
 
-This project is a production-ready backend API built with FastAPI. The architecture prioritizes maintainability, scalability, type safety, and clear domain separation. All business logic should remain framework-agnostic and organized by domain.
+This project is a backend application built with FastAPI. The architecture prioritizes maintainability, scalability, type safety, and clear domain separation. All business logic should remain framework-agnostic and organized by domain.
 
 ## Tech Stack
 
-- Python 3.12+
-- FastAPI
-- SQLAlchemy 2.0 (Async)
-- Alembic
-- PostgreSQL
-- Pydantic v2
-- uv (Package Management)
-- Pytest
-- Ruff
+- Python >=3.12
+- fastapi[standard]>=0.136.0
+- sqlalchemy[asyncio]>=2.0.51
+- alembic>=1.18.5
+- asyncpg>=0.31.0
+- PostgreSQL>=18.x
+- pydantic>=2.x
+- pydantic-settings>=2.x
+- uv>=0.11.26
+- pytest>=9.1.1
+- pytest-asyncio>=1.x
+- httpx>=0.28.1
+- ruff>=0.15.20
+- mypy>=2.x
 
 ## Project Structure
 
 ```text
+pyproject.toml
 app/
-├── pyproject.toml
-├── src/
+├── __init__.py
+├── main.py
+├── config.py
+├── database.py
+├── auth/
 │   ├── __init__.py
-│   ├── main.py
-│   ├── config.py
-│   ├── database.py
-│   │
-│   ├── auth/
-│   │   ├── __init__.py
-│   │   ├── router.py
-│   │   ├── schemas.py
-│   │   ├── models.py
-│   │   ├── service.py
-│   │   └── dependencies.py
-│   │
-│   ├── users/
-│   │   ├── __init__.py
-│   │   ├── router.py
-│   │   ├── schemas.py
-│   │   ├── models.py
-│   │   └── service.py
-│   │
-│   └── shared/
-│       ├── __init__.py
-│       └── exceptions.py
-│
-└── tests/
+│   ├── router.py
+│   ├── schemas.py
+│   ├── models.py
+│   ├── service.py
+│   └── dependencies.py
+├── users/
+│   ├── __init__.py
+│   ├── router.py
+│   ├── schemas.py
+│   ├── models.py
+│   └── service.py
+└── shared/
+    ├── __init__.py
+    └── exceptions.py
+tests/
     └── test_main.py
 ```
 
@@ -67,10 +67,11 @@ Each domain owns its:
 
 #### Router Layer
 
-- Defines API endpoints.
+- Defines v1 API endpoints.
 - Handles request validation and response serialization.
 - Delegates business logic to services.
 - Must remain thin.
+- Maps HTTP requests to the appropriate service methods while maintaining API version compatibility.
 
 #### Service Layer
 
@@ -90,7 +91,8 @@ Each domain owns its:
 
 ### Database
 
-- Use SQLAlchemy 2.0 async engine.
+- Use SQLAlchemy 2.0 with the async engine.
+- Use asyncpg as the PostgreSQL driver.
 - Use AsyncSession exclusively.
 - Database sessions should be dependency-injected.
 - Use Alembic for schema migrations.
@@ -124,17 +126,42 @@ Each domain owns its:
 
 ### FastAPI
 
-- Use dependency injection.
+- Use dependency injection with `typing.Annotated` for clear, type-safe annotations (e.g., `db: Annotated[AsyncSession, Depends(get_db)]`).
 - Prefer async endpoints.
-- Return typed response models.
-- Keep route handlers lightweight.
+- Return typed response models using Pydantic schemas.
+- Keep route handlers lightweight and delegate business logic to services.
 
 ### SQLAlchemy
 
-- Use SQLAlchemy 2.0 style APIs.
-- Prefer select() statements.
-- Avoid legacy query syntax.
-- Use async database sessions.
+- Use SQLAlchemy 2.0 style APIs and `select()` statements.
+- Use async database sessions (`AsyncSession` and `async_sessionmaker`) exclusively.
+- Implement the async database session factory pattern:
+  ```python
+  from collections.abc import AsyncGenerator
+  from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
+
+  engine = create_async_engine(DATABASE_URL, pool_pre_ping=True)
+  async_session_maker = async_sessionmaker(engine, expire_on_commit=False)
+
+  async def get_db() -> AsyncGenerator[AsyncSession, None]:
+      async with async_session_maker() as session:
+          yield session
+  ```
+
+### Configuration Management
+
+- Use `pydantic-settings` to specify configuration and environment variables explicitly.
+- Define settings classes inheriting from `BaseSettings`:
+  ```python
+  from pydantic_settings import BaseSettings, SettingsConfigDict
+
+  class Settings(BaseSettings):
+      model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
+
+      database_url: str
+      secret_key: str
+  ```
+- Store settings objects in a single configuration entrypoint (e.g., `config.py`).
 
 ### Error Handling
 
@@ -174,6 +201,7 @@ Each domain owns its:
 - Always use Pydantic schemas.
 - Never expose ORM models directly.
 - Separate create, update, and response schemas.
+- Use Pydantic V2 config style via `model_config = ConfigDict(from_attributes=True)`.
 
 ### Validation
 
@@ -228,13 +256,13 @@ Each domain owns its:
 
 ## Forbidden
 
-- Do not modify Alembic migrations without explicit instruction.
-- Do not commit secrets or credentials.
-- Do not place business logic in routers.
-- Do not use synchronous database sessions.
-- Do not bypass Pydantic validation.
-- Do not introduce unnecessary abstractions.
-- Do not use wildcard imports.
-- Do not use global mutable state.
-- Do not expose internal database models in API responses.
-- Do not ignore type errors without justification.
+- DO NOT modify Alembic migrations without explicit instruction.
+- DO NOT commit secrets or credentials.
+- DO NOT place business logic in routers.
+- DO NOT use synchronous database sessions.
+- DO NOT bypass Pydantic validation.
+- DO NOT introduce unnecessary abstractions.
+- DO NOT use wildcard imports.
+- DO NOT use global mutable state.
+- DO NOT expose internal database models in API responses.
+- DO NOT ignore type errors without justification.

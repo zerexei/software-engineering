@@ -1,12 +1,12 @@
 ---
-title: "Frontend Support OS"
+title: "Frontend Support"
 category: "Frontend"
 tags: [frontend, ui]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Frontend Support OS
+# Frontend Support
 
 ## ⚡ Quick Reference
 

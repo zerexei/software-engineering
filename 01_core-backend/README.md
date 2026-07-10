@@ -1,12 +1,12 @@
 ---
-title: "Core Backend OS"
+title: "Core Backend"
 category: "Core Backend"
 tags: [backend, fundamentals]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Core Backend OS
+# Core Backend
 
 ## ⚡ Quick Reference
 

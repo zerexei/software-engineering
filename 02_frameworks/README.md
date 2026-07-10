@@ -1,12 +1,12 @@
 ---
-title: "Frameworks OS"
+title: "Frameworks"
 category: "Frameworks"
 tags: [frameworks, backend]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Frameworks OS
+# Frameworks
 
 ## ⚡ Quick Reference
 

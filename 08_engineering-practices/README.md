@@ -1,12 +1,12 @@
 ---
-title: "Engineering Practices OS"
+title: "Engineering Practices"
 category: "Engineering Practices"
 tags: [git, testing, clean-code]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Engineering Practices OS
+# Engineering Practices
 
 ## ⚡ Quick Reference
 

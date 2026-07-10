@@ -1,12 +1,12 @@
 ---
-title: "Observability OS"
+title: "Observability"
 category: "Observability"
 tags: [observability, monitoring, lgtm]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Observability OS
+# Observability
 
 ## ⚡ Quick Reference
 

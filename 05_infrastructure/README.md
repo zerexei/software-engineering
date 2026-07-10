@@ -1,12 +1,12 @@
 ---
-title: "Infrastructure OS"
+title: "Infrastructure"
 category: "Infrastructure"
 tags: [infrastructure, devops]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Infrastructure OS
+# Infrastructure
 
 ## ⚡ Quick Reference
 

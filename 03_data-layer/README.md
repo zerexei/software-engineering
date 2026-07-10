@@ -1,12 +1,12 @@
 ---
-title: "Data Layer OS"
+title: "Data Layer"
 category: "Data Layer"
 tags: [data, database, cache]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Data Layer OS
+# Data Layer
 
 ## ⚡ Quick Reference
 

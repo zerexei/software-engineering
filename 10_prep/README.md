@@ -1,12 +1,12 @@
 ---
-title: "Interview Prep OS"
+title: "Interview Prep"
 category: "Prep"
 tags: [interview, prep, dsa]
 difficulty: "core"
 last_updated: 2026-07-10
 ---
 
-# Interview Prep OS
+# Interview Prep
 
 ## ⚡ Quick Reference
 

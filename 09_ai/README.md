@@ -9,7 +9,7 @@ Built around the idea of keeping developer agents **simple, reliable, and reusab
 ## 📂 Folder Structure
 
 ```text
-04_ai/
+09_ai/
 ├── agent-templates/             # Template guidelines for developer agents
 │   ├── AGENTS.md                # Generic project context guidelines
 │   └── FastAPI-AGENTS.md        # FastAPI-specific backend guidelines

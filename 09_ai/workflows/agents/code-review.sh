@@ -9,7 +9,7 @@ set -euo pipefail
 MAIN_BRANCH="${MAIN_BRANCH:-main}"
 BRANCH="${BRANCH:-agent-run-$(date +%Y%m%d-%H%M%S)}"
 
-PROMPT_FILE="${PROMPT_FILE:-04_ai/workflows/prompts/code-review.md}"
+PROMPT_FILE="${PROMPT_FILE:-09_ai/workflows/prompts/code-review.md}"
 
 SUCCESS_FILE=".agent-complete"
 STUCK_FILE=".agent-stuck"

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Config
-PROMPT_FILE="${PROMPT_FILE:-04_ai/workflows/prompts/release.md}"
+PROMPT_FILE="${PROMPT_FILE:-09_ai/workflows/prompts/release.md}"
 SUCCESS_FILE=".agent-complete"
 STUCK_FILE=".agent-stuck"
 

@@ -10,7 +10,7 @@ ITERATIONS="${1:-10}"
 MAIN_BRANCH="${MAIN_BRANCH:-main}"
 BRANCH="${BRANCH:-overnight-batch-$(date +%Y%m%d-%H%M%S)}"
 
-PROMPT_FILE="04_ai/workflows/prompts/issue-worker.md"
+PROMPT_FILE="09_ai/workflows/prompts/issue-worker.md"
 
 SUCCESS_FILE=".agent-complete"
 STUCK_FILE=".agent-stuck"

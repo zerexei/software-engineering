@@ -16,7 +16,7 @@ resource "aws_db_subnet_group" "rds" {
 resource "aws_db_instance" "postgres" {
   identifier            = "saas-postgres-prod"
   engine                = "postgres"
-  engine_version        = "16.1"
+  engine_version        = "18.0"
   instance_class        = "db.r6g.large"
   allocated_storage     = 50
   max_allocated_storage = 500 # Storage auto-scaling threshold

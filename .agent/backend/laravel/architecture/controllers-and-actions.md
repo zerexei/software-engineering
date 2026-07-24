@@ -3,7 +3,7 @@
 ## 📌 Core Philosophy & Constraints
 - **Thin Controllers**: Controllers MUST only handle HTTP I/O (Form Request validation, Action invocation, JsonResource return). Zero domain logic permitted.
 - **Single-Purpose Action Classes**: Business operations MUST be encapsulated in invokable Action classes (`__invoke()`).
-- **Laravel 11+ Conventions**: Utilize Laravel 11 routing, service providers, and strict return type hints.
+- **Laravel 12+ Conventions**: Utilize Laravel 12 routing, service providers, and strict return type hints.
 
 ## ⚡ Production Boilerplate / Standard Pattern
 

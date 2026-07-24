@@ -10,7 +10,7 @@
 ```php
 <?php
 
-// bootstrap/app.php (Laravel 11 Exception Handler Configuration)
+// bootstrap/app.php (Laravel 12 Exception Handler Configuration)
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Http\Request;

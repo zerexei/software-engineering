@@ -14,7 +14,7 @@ agent_context:
   domain: Enterprise SaaS System Architecture
   frameworks:
     frontend: ["Vue 3 (Composition API)", "React 19+"]
-    backend: ["FastAPI (Async)", "Laravel 11+"]
+    backend: ["FastAPI (Async)", "Laravel 12+"]
     databases: ["PostgreSQL", "MySQL", "Redis", "MongoDB", "Supabase"]
     cloud: ["AWS", "Docker", "Linux Systemd", "GitHub Actions"]
   execution_rules:
@@ -32,5 +32,5 @@ agent_context:
 
 ## 🔍 Verification & Testing
 - **Skill Alignment Check**: Ensure generated code matches the constraints defined in `.agent/SKILLS.md`.
-- **Static Analysis**: Validate with Ruff/Mypy (FastAPI), PHPStan/Pest (Laravel), ESLint/TypeScript strict mode (Frontend).
+- **Static Analysis**: Validate with Ruff/ty (FastAPI), PHPStan/Pest (Laravel), ESLint/TypeScript strict mode (Frontend).
 - **Execution Test**: Execute unit/integration test suites to confirm runtime correctness before completion.

@@ -1,7 +1,7 @@
 # Skill: .agent/frontend/react/router-development/react-router.md
 
 ## 📌 Core Philosophy & Constraints
-- **React Router v6+ Data Routers**: Use `createBrowserRouter` with `RouterProvider`.
+- **React Router v8+ Data Routers**: Use `createBrowserRouter` with `RouterProvider`.
 - **Async Route Loaders & Actions**: Encapsulate data fetching inside route `loader` and `action` handlers.
 - **Nested Layout Routes**: Structure layout routes with `<Outlet />` for consistent navigation hierarchy.
 

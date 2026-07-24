@@ -47,14 +47,14 @@
 | | Component Design | `.agent/frontend/react/architecture/component-design.md` |
 | | Local & Global State | `.agent/frontend/react/state-and-data/local-global-state.md` |
 | | Axios API Client | `.agent/frontend/react/state-and-data/axios-api-client.md` |
-| | React Router v6+ | `.agent/frontend/react/router-development/react-router.md` |
+| | React Router v8+ | `.agent/frontend/react/router-development/react-router.md` |
 | | Navigation & Guards | `.agent/frontend/react/router-development/navigation-and-guards.md` |
 | | React Hook Form & Zod | `.agent/frontend/react/forms-and-validation/react-hook-form-zod.md` |
 | | Shadcn UI | `.agent/frontend/react/UI-and-styling/shadcn-ui.md` |
 | | Vitest Testing Library | `.agent/frontend/react/testing-and-perf/vitest-testing-library.md` |
 | | Playwright E2E | `.agent/frontend/react/testing-and-perf/playwright.md` |
 | | React Performance | `.agent/frontend/react/testing-and-perf/react-performance.md` |
-| **Backend (Laravel 11)** | Controllers & Actions | `.agent/backend/laravel/architecture/controllers-and-actions.md` |
+| **Backend (Laravel 12)** | Controllers & Actions | `.agent/backend/laravel/architecture/controllers-and-actions.md` |
 | | Services & Repositories | `.agent/backend/laravel/architecture/services-and-repositories.md` |
 | | Middleware & Requests | `.agent/backend/laravel/architecture/middleware-and-requests.md` |
 | | REST Endpoints v1 | `.agent/backend/laravel/router-development/rest-endpoints-v1.md` |

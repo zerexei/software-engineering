@@ -29,7 +29,7 @@ services:
         condition: service_started
 
   db:
-    image: postgres:16-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_DB: dev_db
       POSTGRES_PASSWORD: postgres
@@ -44,7 +44,7 @@ services:
       retries: 5
 
   redis:
-    image: redis:7-alpine
+    image: redis:8.6-alpine
     ports:
       - "6379:6379"
 

@@ -3,7 +3,7 @@
 ## 📌 Core Philosophy & Constraints
 - **Correlation ID Middleware**: Assign and propagate `X-Request-ID` UUID headers across request lifecycles.
 - **Request Context Binding**: Store trace IDs in Log context to bind every log entry to the active request.
-- **Laravel 11 Bootstrap**: Register global middleware in `bootstrap/app.php`.
+- **Laravel 12 Bootstrap**: Register global middleware in `bootstrap/app.php`.
 
 ## ⚡ Production Boilerplate / Standard Pattern
 

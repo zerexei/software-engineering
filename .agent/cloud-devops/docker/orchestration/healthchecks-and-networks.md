@@ -21,7 +21,7 @@ services:
       - backend_net
 
   db:
-    image: postgres:16-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_DB: app_db
       POSTGRES_PASSWORD: secret_pass
@@ -35,7 +35,7 @@ services:
       - backend_net
 
   redis:
-    image: redis:7-alpine
+    image: redis:8.6-alpine
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s

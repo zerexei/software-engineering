@@ -19,7 +19,7 @@ This project is a backend application built with FastAPI. The architecture prior
 - pytest-asyncio>=1.x
 - httpx>=0.28.1
 - ruff>=0.15.20
-- mypy>=2.x
+- ty>=0.0.59
 
 ## Project Structure
 

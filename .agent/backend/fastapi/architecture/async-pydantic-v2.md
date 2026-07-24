@@ -1,5 +1,21 @@
 # Skill: .agent/backend/fastapi/architecture/async-pydantic-v2.md
 
+## 🛠️ Tech Stack
+- Python >=3.12
+- fastapi[standard]>=0.136.0
+- sqlalchemy[asyncio]>=2.0.51
+- alembic>=1.18.5
+- asyncpg>=0.31.0
+- PostgreSQL>=18.x
+- pydantic>=2.x
+- pydantic-settings>=2.x
+- uv>=0.11.26
+- pytest>=9.1.1
+- pytest-asyncio>=1.x
+- httpx>=0.28.1
+- ruff>=0.15.20
+- ty>=0.0.59
+
 ## 📌 Core Philosophy & Constraints
 - **Pydantic v2 BaseModels**: Use Pydantic v2 `ConfigDict` and `model_config = ConfigDict(strict=True, frozen=True)`.
 - **Field & Annotated Validation**: Enforce field constraints using `Field()` and `Annotated`.

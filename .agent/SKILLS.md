@@ -30,7 +30,8 @@
 | | Design System Tokens | `.agent/frontend/core/tailwind-css-html/design-system-tokens.md` |
 | | Layout & Responsiveness | `.agent/frontend/core/tailwind-css-html/layout-and-responsiveness.md` |
 | | Semantic HTML & A11y | `.agent/frontend/core/tailwind-css-html/semantic-html-a11y.md` |
-| **Frontend (Vue 3)** | Composition API | `.agent/frontend/vue/architecture/composition-api.md` |
+| **Frontend (Vue 3)** | Root Tech Stack Index | `.agent/frontend/vue/SKILL.md` |
+| | Composition API | `.agent/frontend/vue/architecture/composition-api.md` |
 | | Composables Patterns | `.agent/frontend/vue/architecture/composables-patterns.md` |
 | | Component Design | `.agent/frontend/vue/architecture/component-design.md` |
 | | Pinia State Management | `.agent/frontend/vue/state-and-data/pinia-state-management.md` |
@@ -42,7 +43,8 @@
 | | Vitest Vue Test Utils | `.agent/frontend/vue/testing-and-perf/vitest-vue-test-utils.md` |
 | | Playwright E2E | `.agent/frontend/vue/testing-and-perf/playwright.md` |
 | | Vue Performance | `.agent/frontend/vue/testing-and-perf/vue-performance.md` |
-| **Frontend (React 19)** | Functional Components | `.agent/frontend/react/architecture/functional-components.md` |
+| **Frontend (React 19)** | Root Tech Stack Index | `.agent/frontend/react/SKILL.md` |
+| | Functional Components | `.agent/frontend/react/architecture/functional-components.md` |
 | | Custom Hooks | `.agent/frontend/react/architecture/custom-hooks.md` |
 | | Component Design | `.agent/frontend/react/architecture/component-design.md` |
 | | Local & Global State | `.agent/frontend/react/state-and-data/local-global-state.md` |
@@ -54,7 +56,8 @@
 | | Vitest Testing Library | `.agent/frontend/react/testing-and-perf/vitest-testing-library.md` |
 | | Playwright E2E | `.agent/frontend/react/testing-and-perf/playwright.md` |
 | | React Performance | `.agent/frontend/react/testing-and-perf/react-performance.md` |
-| **Backend (Laravel 12)** | Controllers & Actions | `.agent/backend/laravel/architecture/controllers-and-actions.md` |
+| **Backend (Laravel 12)** | Root Tech Stack Index | `.agent/backend/laravel/SKILL.md` |
+| | Controllers & Actions | `.agent/backend/laravel/architecture/controllers-and-actions.md` |
 | | Services & Repositories | `.agent/backend/laravel/architecture/services-and-repositories.md` |
 | | Middleware & Requests | `.agent/backend/laravel/architecture/middleware-and-requests.md` |
 | | REST Endpoints v1 | `.agent/backend/laravel/router-development/rest-endpoints-v1.md` |
@@ -71,7 +74,8 @@
 | | Reverb WebSockets | `.agent/backend/laravel/async-events-jobs/websockets-reverb.md` |
 | | Pest Testing | `.agent/backend/laravel/testing/pest.md` |
 | | DB Factories & Fakes | `.agent/backend/laravel/testing/database-factories-mocks.md` |
-| **Backend (FastAPI)** | Async & Pydantic v2 | `.agent/backend/fastapi/architecture/async-pydantic-v2.md` |
+| **Backend (FastAPI)** | Root Tech Stack Index | `.agent/backend/fastapi/SKILL.md` |
+| | Async & Pydantic v2 | `.agent/backend/fastapi/architecture/async-pydantic-v2.md` |
 | | Dependency Injection | `.agent/backend/fastapi/architecture/dependency-injection.md` |
 | | Application Factory | `.agent/backend/fastapi/architecture/application-factory.md` |
 | | REST Endpoints v1 | `.agent/backend/fastapi/router-development/rest-endpoints-v1.md` |
@@ -96,6 +100,7 @@
 | | Webhook Receivers | `.agent/backend/shared/third-party-integrations/webhook-receivers.md` |
 | | Circuit Breakers | `.agent/backend/shared/third-party-integrations/circuit-breaker-pattern.md` |
 | **Cloud & DevOps** | Linux Operations Registry | `.agent/cloud-devops/linux/SKILL.md` |
+| | AWS Infrastructure Index | `.agent/cloud-devops/aws/SKILL.md` |
 | | EC2 Instance Management | `.agent/cloud-devops/aws/infrastructure-and-compute/ec2-instance-management.md` |
 | | ECS Docker Deployments | `.agent/cloud-devops/aws/infrastructure-and-compute/ecs-docker-deployments.md` |
 | | Lambda Serverless | `.agent/cloud-devops/aws/infrastructure-and-compute/lambda-serverless.md` |
@@ -103,10 +108,10 @@
 | | S3 & CloudFront CDN | `.agent/cloud-devops/aws/data-and-storage/s3-and-cloudfront.md` |
 | | IAM Roles & Policies | `.agent/cloud-devops/aws/security-and-iam/iam-roles-and-policies.md` |
 | | VPC & Networking | `.agent/cloud-devops/aws/security-and-iam/vpc-and-networking.md` |
+| | Docker Containerization Index | `.agent/cloud-devops/docker/SKILL.md` |
 | | Docker Multi-Stage | `.agent/cloud-devops/docker/containerization/multi-stage-builds.md` |
 | | Docker Non-Root Security | `.agent/cloud-devops/docker/containerization/security-and-non-root.md` |
 | | Docker Frontend Image | `.agent/cloud-devops/docker/containerization/framework-images/frontend-dockerfile.md` |
-| | Docker Laravel Image | `.agent/cloud-devops/docker/containerization/framework-images/laravel-dockerfile.md` |
 | | Docker FastAPI Image | `.agent/cloud-devops/docker/containerization/framework-images/fastapi-dockerfile.md` |
 | | Docker Compose Dev | `.agent/cloud-devops/docker/orchestration/docker-compose-dev.md` |
 | | Compose Traefik Stack | `.agent/cloud-devops/docker/orchestration/compose-traefik-postgres-redis.md` |
@@ -116,6 +121,7 @@
 | | Storage & Permissions | `.agent/cloud-devops/linux/administration/storage-and-permissions.md` |
 | | Logrotate & Journald | `.agent/cloud-devops/linux/monitoring-and-maintenance/logrotate-and-journald.md` |
 | | Shell Automation | `.agent/cloud-devops/linux/monitoring-and-maintenance/shell-scripting-automation.md` |
+| | CI/CD Workflows Index | `.agent/cloud-devops/cicd/SKILL.md` |
 | | Automated Testing Pipeline | `.agent/cloud-devops/cicd/github-actions/automated-testing-pipeline.md` |
 | | Docker Build & Push | `.agent/cloud-devops/cicd/github-actions/docker-build-and-push.md` |
 | | Deployment Workflows | `.agent/cloud-devops/cicd/github-actions/deployment-workflows.md` |

@@ -1,9 +1,9 @@
-# Skill: .agent/backend/shared/third-party-integrations/webhook-receivers.md
+# Skill: .agent/backend/fastapi/third-party-integrations/webhook-receivers.md
 
 ## 📌 Core Philosophy & Constraints
 - **HMAC Signature Verification**: Always verify incoming webhook cryptographic signatures (`X-Signature`) using HMAC-SHA256.
 - **Idempotent Payload Processing**: Store processed webhook message IDs in Redis/DB to prevent duplicate event execution.
-- **Immediate ACK**: Return HTTP 200 OK immediately and process payload asynchronously via queue jobs.
+- **Immediate ACK**: Return HTTP 200 OK immediately and process payload asynchronously via background tasks or Celery.
 
 ## ⚡ Production Boilerplate / Standard Pattern
 
@@ -15,7 +15,7 @@ from fastapi import APIRouter, Header, HTTPException, Request, status
 router = APIRouter()
 WEBHOOK_SECRET = b"whsec_production_secret_key"
 
-def verify_hmac_signature(payload: bytes, signature_header: str):
+def verify_hmac_signature(payload: bytes, signature_header: str) -> None:
     expected_signature = hmac.new(WEBHOOK_SECRET, payload, hashlib.sha256).hexdigest()
     if not hmac.compare_digest(expected_signature, signature_header):
         raise HTTPException(
@@ -27,7 +27,7 @@ def verify_hmac_signature(payload: bytes, signature_header: str):
 async def receive_stripe_webhook(
     request: Request,
     x_stripe_signature: str = Header(...)
-):
+) -> dict:
     raw_body = await request.body()
     verify_hmac_signature(raw_body, x_stripe_signature)
 

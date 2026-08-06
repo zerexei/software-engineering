@@ -63,6 +63,9 @@
 | | REST Endpoints v1 | `.agent/backend/laravel/router-development/rest-endpoints-v1.md` |
 | | Authorization Policies | `.agent/backend/laravel/router-development/authorization.md` |
 | | Sanctum Authentication | `.agent/backend/laravel/router-development/authentication.md` |
+| | Sanctum Tokens | `.agent/backend/laravel/router-development/sanctum-tokens.md` |
+| | RBAC Permissions | `.agent/backend/laravel/router-development/rbac-permissions.md` |
+| | Session Security | `.agent/backend/laravel/router-development/session-security.md` |
 | | Rate Limiting | `.agent/backend/laravel/router-development/rate-limiting.md` |
 | | Security Headers | `.agent/backend/laravel/router-development/security.md` |
 | | Correlation Middleware | `.agent/backend/laravel/router-development/middleware.md` |
@@ -72,6 +75,8 @@
 | | Queue Workers & Jobs | `.agent/backend/laravel/async-events-jobs/queue-workers-jobs.md` |
 | | Event Listeners | `.agent/backend/laravel/async-events-jobs/event-listeners-subscribers.md` |
 | | Reverb WebSockets | `.agent/backend/laravel/async-events-jobs/websockets-reverb.md` |
+| | Resilient HTTP Clients | `.agent/backend/laravel/third-party-integrations/resilient-http-clients.md` |
+| | Webhook Receivers | `.agent/backend/laravel/third-party-integrations/webhook-receivers.md` |
 | | Pest Testing | `.agent/backend/laravel/testing/pest.md` |
 | | DB Factories & Fakes | `.agent/backend/laravel/testing/database-factories-mocks.md` |
 | **Backend (FastAPI)** | Root Tech Stack Index | `.agent/backend/fastapi/SKILL.md` |
@@ -82,6 +87,9 @@
 | | REST Endpoints v1 | `.agent/backend/fastapi/router-development/rest-endpoints-v1.md` |
 | | Authorization Policies | `.agent/backend/fastapi/router-development/authorization.md` |
 | | OAuth2 Authentication | `.agent/backend/fastapi/router-development/authentication.md` |
+| | JWT OAuth2 Tokens | `.agent/backend/fastapi/router-development/jwt-oauth2.md` |
+| | RBAC Permissions | `.agent/backend/fastapi/router-development/rbac-permissions.md` |
+| | Session Security | `.agent/backend/fastapi/router-development/session-security.md` |
 | | Rate Limiting | `.agent/backend/fastapi/router-development/rate-limiting.md` |
 | | Security Middleware | `.agent/backend/fastapi/router-development/security.md` |
 | | Correlation Middleware | `.agent/backend/fastapi/router-development/middleware.md` |
@@ -91,15 +99,11 @@
 | | Async WebSockets | `.agent/backend/fastapi/async-events-jobs/async-websockets.md` |
 | | Background Tasks | `.agent/backend/fastapi/async-events-jobs/background-tasks.md` |
 | | Celery Redis Workers | `.agent/backend/fastapi/async-events-jobs/celery-redis-workers.md` |
+| | Resilient HTTP Clients | `.agent/backend/fastapi/third-party-integrations/resilient-http-clients.md` |
+| | Webhook Receivers | `.agent/backend/fastapi/third-party-integrations/webhook-receivers.md` |
 | | Pytest AsyncIO | `.agent/backend/fastapi/testing-and-tooling/pytest-asyncio.md` |
 | | Mock Dependencies | `.agent/backend/fastapi/testing-and-tooling/mock-dependencies.md` |
 | | Ruff & Formatting | `.agent/backend/fastapi/testing-and-tooling/ruff-and-formatting.md` |
-| **Backend Shared** | JWT & Sanctum Auth | `.agent/backend/shared/authentication-authz/jwt-oauth2-sanctum.md` |
-| | RBAC Permissions | `.agent/backend/shared/authentication-authz/rbac-permissions.md` |
-| | Session Security | `.agent/backend/shared/authentication-authz/session-security.md` |
-| | Resilient HTTP Clients | `.agent/backend/shared/third-party-integrations/resilient-http-clients.md` |
-| | Webhook Receivers | `.agent/backend/shared/third-party-integrations/webhook-receivers.md` |
-| | Circuit Breakers | `.agent/backend/shared/third-party-integrations/circuit-breaker-pattern.md` |
 | **Cloud & DevOps** | Linux Operations Registry | `.agent/cloud-devops/linux/SKILL.md` |
 | | AWS Infrastructure Index | `.agent/cloud-devops/aws/SKILL.md` |
 | | EC2 Instance Management | `.agent/cloud-devops/aws/infrastructure-and-compute/ec2-instance-management.md` |

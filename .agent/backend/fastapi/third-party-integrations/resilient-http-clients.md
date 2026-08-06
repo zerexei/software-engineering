@@ -1,9 +1,9 @@
-# Skill: .agent/backend/shared/third-party-integrations/resilient-http-clients.md
+# Skill: .agent/backend/fastapi/third-party-integrations/resilient-http-clients.md
 
 ## 📌 Core Philosophy & Constraints
-- **Strict Outbound Timeouts**: Configure connect timeouts (2s) and read timeouts (5s) for external HTTP clients.
-- **Exponential Backoff & Retries**: Retry 5xx server errors and network timeouts with randomized jitter.
-- **Async HTTP Clients**: Use Guzzle (PHP) or HTTPX (Python) async capabilities.
+- **Strict Outbound Timeouts**: Configure connect timeouts (2.0s) and read timeouts (5.0s) for HTTPX client sessions.
+- **Exponential Backoff & Retries**: Retry 5xx server errors and network timeouts with randomized jitter using `tenacity`.
+- **Connection Pooling**: Reuse persistent `httpx.AsyncClient` instances instead of instantiating new client objects per request.
 
 ## ⚡ Production Boilerplate / Standard Pattern
 
@@ -33,7 +33,7 @@ class ResilientExternalClient:
 ## 🚫 Forbidden Anti-Patterns
 - ❌ **Unbounded Outbound Requests**: Invoking external APIs without explicit timeouts causing thread pool starvation.
 - ❌ **Retrying Client 4xx Errors**: Retrying HTTP 400 or 401 response errors which will never succeed on retry.
-- ❌ **Creating New Client Instances Per Request**: Re-instantiating HTTP client objects without pooling connections.
+- ❌ **Creating New Client Instances Per Request**: Re-instantiating HTTP client objects without connection pooling.
 
 ## 🔍 Verification & Testing
-- **HTTPX Mock Test**: Mock external API delay with `respx` asserting client timeouts at 5 seconds.
+- **HTTPX Mock Test**: Mock external API delay with `respx` asserting client timeouts at 5 seconds in Pytest.

@@ -26,6 +26,9 @@ This document serves as the master decision matrix and architecture reference fo
 - 🌐 **REST Endpoints v1**: [rest-endpoints-v1.md](./router-development/rest-endpoints-v1.md)
 - 🔐 **Authorization Policies**: [authorization.md](./router-development/authorization.md)
 - 🔑 **Sanctum Authentication**: [authentication.md](./router-development/authentication.md)
+- 🎫 **Sanctum Tokens**: [sanctum-tokens.md](./router-development/sanctum-tokens.md)
+- 🛡️ **RBAC Permissions**: [rbac-permissions.md](./router-development/rbac-permissions.md)
+- 🍪 **Session Security**: [session-security.md](./router-development/session-security.md)
 - 🚦 **Rate Limiting**: [rate-limiting.md](./router-development/rate-limiting.md)
 - 🔒 **Security Headers**: [security.md](./router-development/security.md)
 - 🆔 **Correlation Middleware**: [middleware.md](./router-development/middleware.md)
@@ -35,6 +38,8 @@ This document serves as the master decision matrix and architecture reference fo
 - ⚡ **Queue Workers & Jobs**: [queue-workers-jobs.md](./async-events-jobs/queue-workers-jobs.md)
 - 📡 **Event Listeners**: [event-listeners-subscribers.md](./async-events-jobs/event-listeners-subscribers.md)
 - 🔌 **Reverb WebSockets**: [websockets-reverb.md](./async-events-jobs/websockets-reverb.md)
+- 🌐 **Resilient HTTP Clients**: [resilient-http-clients.md](./third-party-integrations/resilient-http-clients.md)
+- 🪝 **Webhook Receivers**: [webhook-receivers.md](./third-party-integrations/webhook-receivers.md)
 - 🧪 **Pest Testing**: [pest.md](./testing/pest.md)
 - 🏭 **DB Factories & Fakes**: [database-factories-mocks.md](./testing/database-factories-mocks.md)
 

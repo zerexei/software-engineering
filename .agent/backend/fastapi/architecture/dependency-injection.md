@@ -1,24 +1,24 @@
 # Skill: .agent/backend/fastapi/architecture/dependency-injection.md
 
 ## 📌 Core Philosophy & Constraints
-- **`Depends()` Pattern**: Inject database sessions, services, and security providers using FastAPI `Depends()`.
-- **AsyncSession Yield Pattern**: Yield SQLAlchemy `AsyncSession` instances inside generator dependencies ensuring automatic cleanup/close.
-- **Service Layer Injection**: Inject domain service classes directly into router endpoints.
+- **`typing.Annotated` Dependency Injection**: Use `typing.Annotated` with `Depends()` for clear, reusable, type-safe route handler parameters.
+- **AsyncSession Generator Pattern**: Yield SQLAlchemy `AsyncSession` instances inside generator dependencies ensuring automatic cleanup/commit/rollback.
+- **Service Layer Injection**: Inject domain service classes into router endpoints via dependencies.
 
 ## ⚡ Production Boilerplate / Standard Pattern
 
 ```python
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
+from typing import Annotated
 from fastapi import Depends
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
-from app.services.order_service import OrderService
+from app.users.service import UserService
 
-DATABASE_URL = "postgresql+asyncpg://user:pass@localhost:5432/dbname"
-engine = create_async_engine(DATABASE_URL, pool_size=20, max_overflow=10)
-AsyncSessionFactory = async_sessionmaker(engine, expire_on_commit=False)
+engine = create_async_engine("postgresql+asyncpg://user:pass@localhost:5432/dbname", pool_pre_ping=True)
+async_session_maker = async_sessionmaker(engine, expire_on_commit=False)
 
-async def get_db_session() -> AsyncGenerator[AsyncSession, None]:
-    async with AsyncSessionFactory() as session:
+async def get_db() -> AsyncGenerator[AsyncSession, None]:
+    async with async_session_maker() as session:
         try:
             yield session
             await session.commit()
@@ -26,14 +26,19 @@ async def get_db_session() -> AsyncGenerator[AsyncSession, None]:
             await session.rollback()
             raise
 
-def get_order_service(session: AsyncSession = Depends(get_db_session)) -> OrderService:
-    return OrderService(db_session=session)
+# Type-safe annotated dependency aliases
+DbSession = Annotated[AsyncSession, Depends(get_db)]
+
+def get_user_service(db: DbSession) -> UserService:
+    return UserService(db=db)
+
+UserServiceDep = Annotated[UserService, Depends(get_user_service)]
 ```
 
 ## 🚫 Forbidden Anti-Patterns
-- ❌ **Global Unmanaged Sessions**: Instantiating a single global database session object across concurrent requests.
+- ❌ **Unannotated Raw `Depends()`**: Declaring `db: AsyncSession = Depends(get_db)` repeatedly instead of reusable `Annotated` type aliases.
+- ❌ **Global Unmanaged Sessions**: Instantiating a single global database session object shared across concurrent async requests.
 - ❌ **Manual Try/Finally in Routers**: Opening and closing DB connections manually inside route handler functions.
-- ❌ **Ignoring Exception Rollbacks**: Yielding sessions without catching exceptions to trigger `await session.rollback()`.
 
 ## 🔍 Verification & Testing
-- **Dependency Override Test**: Use `app.dependency_overrides[get_db_session] = override_db` in Pytest integration test suite.
+- **Dependency Override Test**: Use `app.dependency_overrides[get_db] = override_get_db` in Pytest integration test suites.

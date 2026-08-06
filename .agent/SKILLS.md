@@ -75,6 +75,7 @@
 | | Pest Testing | `.agent/backend/laravel/testing/pest.md` |
 | | DB Factories & Fakes | `.agent/backend/laravel/testing/database-factories-mocks.md` |
 | **Backend (FastAPI)** | Root Tech Stack Index | `.agent/backend/fastapi/SKILL.md` |
+| | Project Structure | `.agent/backend/fastapi/architecture/project-structure.md` |
 | | Async & Pydantic v2 | `.agent/backend/fastapi/architecture/async-pydantic-v2.md` |
 | | Dependency Injection | `.agent/backend/fastapi/architecture/dependency-injection.md` |
 | | Application Factory | `.agent/backend/fastapi/architecture/application-factory.md` |

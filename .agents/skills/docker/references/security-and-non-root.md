@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/containerization/security-and-non-root.md
-
 ## 📌 Core Philosophy & Constraints
 - **Unprivileged User Execution**: Never run application processes as `root`; create a dedicated unprivileged user (`appuser`).
 - **Secret Protection**: Pass runtime secrets via environment variables or secret mounts; never embed secrets in Docker images.

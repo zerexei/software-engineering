@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/UI-and-styling/shadcn-vue.md
-
 ## 📌 Core Philosophy & Constraints
 - **Radix Vue Primitives**: Build accessible Shadcn Vue UI components backed by Radix Vue headless primitives.
 - **Class Merging Utility**: Use `cn()` helper (clsx + tailwind-merge) for conditional class concatenation.

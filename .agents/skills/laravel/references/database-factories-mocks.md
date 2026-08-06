@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/testing/database-factories-mocks.md
-
 ## 📌 Core Philosophy & Constraints
 - **Eloquent Factories**: All database state seeding in tests MUST use Eloquent Factories (`User::factory()`).
 - **HTTP Client Fakes**: Mock third-party external APIs using `Http::fake()`.

@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/core/typescript-javascript/strict-type-declarations.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict Null Checks**: `strict: true` in `tsconfig.json`. `any` type is strictly forbidden.
 - **Generics & Utility Types**: Use `Pick`, `Omit`, `Partial`, `Readonly`, and discriminate unions for dynamic data.

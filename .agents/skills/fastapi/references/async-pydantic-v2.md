@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/architecture/async-pydantic-v2.md
-
 
 ## 📌 Core Philosophy & Constraints
 - **Pydantic v2 BaseModels**: Use Pydantic v2 `ConfigDict` and `model_config = ConfigDict(strict=True, frozen=True)`.

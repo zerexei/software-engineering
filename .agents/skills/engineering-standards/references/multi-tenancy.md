@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/saas-architecture/multi-tenancy.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict Data Isolation**: No database query MUST ever return cross-tenant data.
 - **Tenant Context Injection**: Tenant ID MUST be extracted from authenticated JWT claims or domain context, never trusted directly from unverified request body parameters.

@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/linux/administration/storage-and-permissions.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict Permission Masking**: Set directory permissions to `750` (`rwxr-x---`) and file permissions to `640` (`rw-r-----`).
 - **Least Privilege Ownership**: Assign ownership strictly to service users (`www-data:www-data`), never global `root`.

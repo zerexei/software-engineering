@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/security-and-iam/vpc-and-networking.md
-
 ## 📌 Core Philosophy & Constraints
 - **Subnet Isolation**: Split VPC into Public (ALB/Bastion), Private App (ECS/EC2), and Isolated Database subnets.
 - **Redundant NAT Gateways**: Deploy Multi-AZ NAT Gateways to ensure outbound internet availability for private subnets.

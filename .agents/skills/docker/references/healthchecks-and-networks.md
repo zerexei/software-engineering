@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/orchestration/healthchecks-and-networks.md
-
 ## 📌 Core Philosophy & Constraints
 - **Explicit Health Checks**: Define explicit `healthcheck` directives for database, cache, and app containers.
 - **Dependency Sequencing**: Use `depends_on: { service: { condition: service_healthy } }` to prevent startup race conditions.

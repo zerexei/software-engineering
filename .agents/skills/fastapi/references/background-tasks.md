@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/async-events-jobs/background-tasks.md
-
 ## 📌 Core Philosophy & Constraints
 - **Lightweight Async Jobs**: Use FastAPI `BackgroundTasks` for non-critical, in-process tasks (email confirmation, log flushing).
 - **Non-Blocking Return**: Immediately return HTTP status code 202/200 to client without waiting for task execution completion.

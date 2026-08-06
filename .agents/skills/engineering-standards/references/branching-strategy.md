@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/git-workflow-and-reviews/branching-strategy.md
-
 ## 📌 Core Philosophy & Constraints
 - **Trunk-Based Development**: `main` branch is always release-ready and production-stable.
 - **Short-Lived Feature Branches**: Branches MUST live < 48 hours to minimize merge drift.

@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/middleware.md
-
 ## 📌 Core Philosophy & Constraints
 - **Correlation ID Middleware**: Assign and propagate `X-Request-ID` UUID headers across request lifecycles.
 - **Request Context Binding**: Store trace IDs in Log context to bind every log entry to the active request.

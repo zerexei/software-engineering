@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/pagination-filter-sort.md
-
 ## 📌 Core Philosophy & Constraints
 - **Generic Pagination Container**: Wrap paginated lists in a generic `PageResponse[T]` schema.
 - **Allowed Query Sorting**: Whitelist sortable database columns to prevent SQL injection or un-indexed queries.

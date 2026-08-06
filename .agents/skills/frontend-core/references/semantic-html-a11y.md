@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/ui-design/tailwind-css-html/semantic-html-a11y.md
-
 ## 📌 Core Philosophy & Constraints
 - **Semantic HTML5**: Use `<main>`, `<nav>`, `<header>`, `<footer>`, `<article>`, and `<section>` instead of generic `<div>` nests.
 - **WAI-ARIA & Focus Management**: Ensure interactive components have `aria-label`, visible focus rings (`focus-visible:outline-none focus-visible:ring-2`), and keyboard navigation.

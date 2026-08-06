@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/error-handling.md
-
 ## 📌 Core Philosophy & Constraints
 - **RFC 7807 Problem Details Handlers**: Global exception handlers MUST output `application/problem+json` format.
 - **Custom Application Exceptions**: Inherit domain errors from base `DomainException` classes.

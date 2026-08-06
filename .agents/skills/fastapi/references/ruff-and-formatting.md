@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/testing-and-tooling/ruff-and-formatting.md
-
 ## 📌 Core Philosophy & Constraints
 - **Ruff Linter & Formatter**: Standardize code formatting and linting on Ruff (`ruff check`, `ruff format`).
 - **Strict Rule Selection**: Enable Pyflakes (`F`), pycodestyle (`E`, `W`), isort (`I`), and flake8-bugbear (`B`).

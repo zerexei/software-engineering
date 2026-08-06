@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/core/typescript-javascript/esnext-patterns.md
-
 ## 📌 Core Philosophy & Constraints
 - **Immutable Operations**: Use `structuredClone()`, spread syntax, and Array methods (`toSorted`, `toSpliced`, `map`, `filter`).
 - **Modern ES Features**: Optional chaining (`?.`), Nullish coalescing (`??`), Logical assignment (`??=`), and `Object.groupBy()`.

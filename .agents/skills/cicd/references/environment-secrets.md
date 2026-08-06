@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/cicd/release-management/environment-secrets.md
-
 ## 📌 Core Philosophy & Constraints
 - **GitHub Environment Secrets**: Isolate staging and production secrets using GitHub Repository Environments.
 - **Log Masking**: Mask all sensitive environment variables in CI/CD log outputs using `::add-mask::`.

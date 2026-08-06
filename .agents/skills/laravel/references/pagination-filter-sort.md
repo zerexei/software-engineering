@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/pagination-filter-sort.md
-
 ## 📌 Core Philosophy & Constraints
 - **Cursor & Length-Aware Pagination**: Use `$query->cursorPaginate()` for high-volume datasets or `$query->paginate()` for standard paginated UI grids.
 - **Allowed Query Filtering**: Whitelist valid filterable/sortable columns to prevent arbitrary SQL column injection.

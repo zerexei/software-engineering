@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/state-and-data/axios-api-client.md
-
 ## 📌 Core Philosophy & Constraints
 - **Centralized Axios Instance**: All HTTP requests MUST use a single configured Axios instance (`apiClient.ts`).
 - **Request & Response Interceptors**: Automatically inject JWT Authorization headers and format API error payloads.

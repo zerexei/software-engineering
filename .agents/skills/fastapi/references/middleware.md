@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/middleware.md
-
 ## 📌 Core Philosophy & Constraints
 - **Structlog Correlation Middleware**: Bind request correlation IDs to structlog context variables on every request.
 - **Request Response Tracing**: Log HTTP method, path, status code, and execution time (ms) for every API request.

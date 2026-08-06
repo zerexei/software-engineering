@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/architecture/middleware-and-requests.md
-
 ## 📌 Core Philosophy & Constraints
 - **Form Request Rules**: All incoming request payloads MUST be validated via custom Form Request classes.
 - **Input Sanitization**: Trim and sanitize inputs automatically before validation evaluation.

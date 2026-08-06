@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/git-workflow-and-reviews/commit-conventions.md
-
 ## 📌 Core Philosophy & Constraints
 - **Conventional Commits 1.0.0**: Mandatory adherence to standard format: `<type>(<scope>): <subject>`.
 - **Imperative Mood**: Subjects MUST be written in imperative mood ("add", "fix", "change", not "added" or "adds").

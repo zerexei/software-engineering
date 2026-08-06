@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/logging-and-monitoring/context-and-tracing.md
-
 ## 📌 Core Philosophy & Constraints
 - **Correlation ID Propagation**: Every incoming HTTP request MUST be assigned a unique `correlation_id` (`X-Request-ID`).
 - **End-to-End Tracing**: The correlation ID MUST propagate across HTTP responses, database queries, and async queue jobs.

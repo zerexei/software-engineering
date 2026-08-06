@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/containerization/framework-images/fastapi-dockerfile.md
-
 ## 📌 Core Philosophy & Constraints
 - **Official `astral-sh/uv` Image**: Use `ghcr.io/astral-sh/uv:python3.12-trixie-slim` base image for fast, native `uv` package management.
 - **Cache Mounting**: Utilize BuildKit cache mounts (`--mount=type=cache,target=/root/.cache/uv`) for ultra-fast dependency restoration.

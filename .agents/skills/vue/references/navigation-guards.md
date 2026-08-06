@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/router-development/navigation-guards.md
-
 ## 📌 Core Philosophy & Constraints
 - **Global Auth Guard**: Intercept all route transitions in `beforeEach` to validate authentication state.
 - **RBAC Policy Check**: Verify current user roles match target `route.meta.roles`.

@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/testing-and-perf/vitest-testing-library.md
-
 ## 📌 Core Philosophy & Constraints
 - **React Testing Library (RTL)**: Test components from the user's perspective (`screen.getByRole`).
 - **User-Event Library**: Simulate user interactions using `@testing-library/user-event` instead of `fireEvent`.

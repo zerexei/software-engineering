@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/orchestration/docker-compose-dev.md
-
 ## 📌 Core Philosophy & Constraints
 - **Hot-Reloading Volume Mounts**: Mount local source directories into development containers (`./:/app`).
 - **Development Service Dependencies**: Spin up PostgreSQL, Redis, and Mailpit services automatically alongside app containers.

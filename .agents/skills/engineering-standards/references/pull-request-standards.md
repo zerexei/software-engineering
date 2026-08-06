@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/git-workflow-and-reviews/pull-request-standards.md
-
 ## 📌 Core Philosophy & Constraints
 - **Atomic PR Sizing**: PRs MUST be kept small (< 400 lines changed) to ensure thorough reviews.
 - **Mandatory PR Template**: Every PR MUST complete all sections of the standard PR template.

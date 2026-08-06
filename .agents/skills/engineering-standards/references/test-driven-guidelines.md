@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/testing-strategy/test-driven-guidelines.md
-
 ## 📌 Core Philosophy & Constraints
 - **Red-Green-Refactor**: Write a failing test first, implement minimal code to pass, then refactor cleanly.
 - **Specification as Code**: Tests document feature specifications and requirements.

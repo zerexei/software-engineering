@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/testing-and-perf/playwright.md
-
 ## 📌 Core Philosophy & Constraints
 - **Playwright E2E for Vue**: Test end-to-end user flows against live Vue 3 dev/preview servers.
 - **Storage State Authentication**: Reuse authenticated browser context (`storageState.json`) to skip repetitive login UI steps.

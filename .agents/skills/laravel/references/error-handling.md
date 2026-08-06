@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/error-handling.md
-
 ## 📌 Core Philosophy & Constraints
 - **Standardized Exception Handling**: Format exception responses centrally via `bootstrap/app.php` exception handler.
 - **RFC 7807 Problem Details**: Return JSON error payloads containing `status`, `title`, `detail`, and `instance`.

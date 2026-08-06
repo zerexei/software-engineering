@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/security.md
-
 ## 📌 Core Philosophy & Constraints
 - **Security Headers Middleware**: Inject `X-Frame-Options`, `X-Content-Type-Options`, and `Content-Security-Policy` via Starlette middleware.
 - **Strict CORS Origin Whitelisting**: Specify exact allowed origins in `CORSMiddleware`.

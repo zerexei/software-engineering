@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/saas-architecture/security-and-compliance.md
-
 ## 📌 Core Philosophy & Constraints
 - **Zero Trust Security**: Validate and sanitize every request input regardless of origin.
 - **Mandatory Security Headers**: Responses MUST include `Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, and `Content-Security-Policy`.

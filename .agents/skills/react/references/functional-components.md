@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/architecture/functional-components.md
-
 ## 📌 Core Philosophy & Constraints
 - **React 19 Functional Components**: Use `FC<Props>` or typed props explicitly. Class components are forbidden.
 - **Compound Components Pattern**: Structure complex UI components (e.g. Card, Select, Modal) using parent-child compound relationships.

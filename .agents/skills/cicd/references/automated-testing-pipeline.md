@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/cicd/github-actions/automated-testing-pipeline.md
-
 ## 📌 Core Philosophy & Constraints
 - **Matrix Testing**: Test across target runtime versions (Node 20/22, Python 3.11/3.12, PHP 8.2/8.3).
 - **Fast Dependency Caching**: Use official setup action caching (`cache: 'pip'`, `cache: 'npm'`, `setup-uv`).

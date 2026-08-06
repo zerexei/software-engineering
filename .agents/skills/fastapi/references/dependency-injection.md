@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/architecture/dependency-injection.md
-
 ## 📌 Core Philosophy & Constraints
 - **`typing.Annotated` Dependency Injection**: Use `typing.Annotated` with `Depends()` for clear, reusable, type-safe route handler parameters.
 - **AsyncSession Generator Pattern**: Yield SQLAlchemy `AsyncSession` instances inside generator dependencies ensuring automatic cleanup/commit/rollback.

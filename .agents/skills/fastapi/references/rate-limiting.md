@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/rate-limiting.md
-
 ## 📌 Core Philosophy & Constraints
 - **SlowAPI Rate Limiter**: Use SlowAPI rate limiter backed by Redis storage.
 - **Client Identifier Keys**: Limit requests based on client IP address (`get_remote_address`) or authenticated user ID.

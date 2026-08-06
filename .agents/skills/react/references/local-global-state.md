@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/state-and-data/local-global-state.md
-
 ## 📌 Core Philosophy & Constraints
 - **Local vs Global State**: Keep UI state (`useState`) local; place shared application state in Zustand stores.
 - **Atomic Selectors**: Use atomic selectors with Zustand (`useStore(state => state.user)`) to avoid unnecessary re-renders.

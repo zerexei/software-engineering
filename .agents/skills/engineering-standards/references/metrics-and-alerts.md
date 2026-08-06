@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/logging-and-monitoring/metrics-and-alerts.md
-
 ## 📌 Core Philosophy & Constraints
 - **RED Metrics**: Standardize API monitoring on **R**ate (req/sec), **E**rrors (failed/sec), and **D**uration (latency histogram).
 - **Mandatory Health Probe**: Applications MUST expose `/healthz` (liveness) and `/readyz` (readiness) endpoints.

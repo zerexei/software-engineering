@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/cicd/github-actions/docker-build-and-push.md
-
 ## 📌 Core Philosophy & Constraints
 - **Docker Buildx & Layer Cache**: Use `docker/setup-buildx-action` with GitHub Actions cache backend (`type=gha`).
 - **Semantic Tagging**: Tag container images with Git commit SHA and release tag (`type=sha`, `type=semver`).

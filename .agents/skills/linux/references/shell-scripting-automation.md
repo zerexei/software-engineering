@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/linux/monitoring-and-maintenance/shell-scripting-automation.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict Shell Mode**: All Bash scripts MUST start with `set -euo pipefail` to fail immediately on unhandled errors.
 - **Idempotent Automation**: Ensure automation scripts can be re-run safely multiple times without side effects.

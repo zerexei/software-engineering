@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/testing-and-perf/playwright.md
-
 ## 📌 Core Philosophy & Constraints
 - **Playwright E2E Cross-Browser**: Test critical user flows in Chromium, Firefox, and WebKit.
 - **Fixtures & Page Objects**: Encapsulate setup steps inside Playwright custom fixtures and Page Objects.

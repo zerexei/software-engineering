@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/linux/administration/process-management-systemd.md
-
 ## 📌 Core Philosophy & Constraints
 - **Systemd Unit Management**: Run application services via Systemd unit files (`/etc/systemd/system/app.service`).
 - **Auto-Restart Policies**: Configure `Restart=always` and `RestartSec=5s` for automatic recovery from process crashes.

@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/forms-and-validation/vee-validate-zod.md
-
 ## 📌 Core Philosophy & Constraints
 - **Zod Schema Validation**: Define form validation schemas using Zod schemas via `@vee-validate/zod`.
 - **Form State Hook**: Manage form fields and error bindings using `useForm()` and `useField()`.

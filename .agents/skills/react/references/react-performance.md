@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/testing-and-perf/react-performance.md
-
 ## 📌 Core Philosophy & Constraints
 - **Memoization Strategy**: Use `useMemo` for expensive computations and `useCallback` for stable function references passed to memoized children.
 - **Virtualized Lists**: Use `@tanstack/react-virtual` or `react-window` for rendering large datasets (>100 items).

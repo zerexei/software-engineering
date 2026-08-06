@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/security.md
-
 ## 📌 Core Philosophy & Constraints
 - **Security Headers**: Inject `X-Frame-Options`, `X-Content-Type-Options`, and `Strict-Transport-Security` headers in middleware.
 - **SQL Injection Prevention**: Always use Eloquent query builder or PDO parameterized bindings. Never concatenate SQL strings.

@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/infrastructure-and-compute/ecs-docker-deployments.md
-
 ## 📌 Core Philosophy & Constraints
 - **Fargate Launch Type**: Run container tasks serverless via AWS Fargate with explicit CPU/Memory definitions.
 - **Service Auto-Scaling**: Configure target-tracking auto-scaling policies based on CPU and Memory metrics.

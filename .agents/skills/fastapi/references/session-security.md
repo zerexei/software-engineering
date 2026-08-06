@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/session-security.md
-
 ## 📌 Core Philosophy & Constraints
 - **Secure Cookie Flags**: Session cookies MUST set `samesite="lax"` or `"strict"`, `secure=True`, and `httponly=True`.
 - **Token Revocation List (TRL)**: Store revoked token IDs (JTI) in Redis with TTL matching token expiry.

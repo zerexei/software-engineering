@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/orchestration/compose-traefik-postgres-redis.md
-
 ## 📌 Core Philosophy & Constraints
 - **Traefik Reverse Proxy**: Route inbound HTTP/HTTPS traffic to containers via dynamic Traefik container labels.
 - **Automated SSL/TLS (Let's Encrypt)**: Generate HTTPS certificates automatically using Traefik ACME integration.

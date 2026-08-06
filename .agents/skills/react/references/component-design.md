@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/architecture/component-design.md
-
 ## 📌 Core Philosophy & Constraints
 - **Children & Slots Composition**: Pass UI sections via `children` or named prop slots (`headerSlot`, `footerSlot`).
 - **Portal Rendering**: Render modals, tooltips, and floating menus via `createPortal()` to avoid z-index stacking issues.

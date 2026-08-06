@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/linux/monitoring-and-maintenance/logrotate-and-journald.md
-
 ## 📌 Core Philosophy & Constraints
 - **Log Rotation Enforcement**: Configure `logrotate` for all custom application log paths to prevent disk capacity failure.
 - **Systemd Journal Cleanups**: Cap `journald` log retention size in `/etc/systemd/journald.conf` (`SystemMaxUse=1G`).

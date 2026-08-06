@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/third-party-integrations/resilient-http-clients.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict Outbound Timeouts**: Configure connect timeouts (2.0s) and read timeouts (5.0s) for HTTPX client sessions.
 - **Exponential Backoff & Retries**: Retry 5xx server errors and network timeouts with randomized jitter using `tenacity`.

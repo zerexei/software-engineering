@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/ui-design/tailwind-css-html/layout-and-responsiveness.md
-
 ## 📌 Core Philosophy & Constraints
 - **Mobile-First Responsive Design**: Write base styles for mobile viewports (`320px+`), then add `sm:`, `md:`, `lg:`, `xl:`.
 - **CSS Grid & Flexbox**: Use Flexbox for 1D alignments and CSS Grid for 2D multi-column layouts.

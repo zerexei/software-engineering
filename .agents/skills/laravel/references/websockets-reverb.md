@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/async-events-jobs/websockets-reverb.md
-
 ## 📌 Core Philosophy & Constraints
 - **Laravel Reverb Server**: Use native Laravel Reverb for real-time WebSocket broadcasting.
 - **Private Channels**: Broadcast sensitive tenant updates via `PrivateChannel` authorization wrappers.

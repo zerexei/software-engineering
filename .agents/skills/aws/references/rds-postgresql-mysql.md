@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/data-and-storage/rds-postgresql-mysql.md
-
 ## 📌 Core Philosophy & Constraints
 - **Multi-AZ Provisioning**: Enable `multi_az = true` in production for automatic regional failover.
 - **Storage Auto-Scaling**: Configure `max_allocated_storage` to allow storage expansion without downtime.

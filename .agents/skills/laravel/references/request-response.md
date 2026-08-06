@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/request-response.md
-
 ## 📌 Core Philosophy & Constraints
 - **API Resource Transformers**: Always transform Eloquent model outputs through `JsonResource` or `ResourceCollection` classes.
 - **Strict Data Scrubbing**: Never return raw Eloquent model instances directly (`return Order::all()`).

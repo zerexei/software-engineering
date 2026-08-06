@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/saas-architecture/error-handling-standards.md
-
 ## 📌 Core Philosophy & Constraints
 - **RFC 7807 Problem Details**: All API error responses MUST strictly adhere to RFC 7807 JSON format.
 - **Unified Error Structure**: Response JSON MUST contain `type`, `title`, `status`, `detail`, `instance`, and optional `errors`.

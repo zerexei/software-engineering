@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/request-response.md
-
 ## 📌 Core Philosophy & Constraints
 - **Pydantic Response Filtering**: Filter database attributes automatically using `response_model=OutputSchema`.
 - **Strict Input Models**: Separate create/update request schemas from output response schemas.

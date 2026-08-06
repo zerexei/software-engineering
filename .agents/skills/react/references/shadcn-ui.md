@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/UI-and-styling/shadcn-ui.md
-
 ## 📌 Core Philosophy & Constraints
 - **Radix UI Primitives**: Build Shadcn UI components wrapping Radix UI headless components.
 - **Class Variance Authority (CVA)**: Manage variant styles (`default`, `outline`, `destructive`) with `cva()`.

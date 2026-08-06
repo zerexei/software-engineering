@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/third-party-integrations/resilient-http-clients.md
-
 ## 📌 Core Philosophy & Constraints
 - **Laravel Http Facade**: Use Laravel `Http::timeout()` and `Http::retry()` for all outbound HTTP communications.
 - **Strict Outbound Timeouts**: Configure connect timeouts (2s) and request timeouts (5s).

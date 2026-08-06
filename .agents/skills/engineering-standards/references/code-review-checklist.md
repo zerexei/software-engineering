@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/git-workflow-and-reviews/code-review-checklist.md
-
 ## 📌 Core Philosophy & Constraints
 - **Automated Verification First**: Linters, formatters, and static analysis MUST handle code formatting; human review focuses on architecture, security, and edge cases.
 - **Constructive & Specific**: Feedback must be actionable, clear, and reference exact lines or standards.

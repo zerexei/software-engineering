@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/testing-strategy/integration-testing.md
-
 ## 📌 Core Philosophy & Constraints
 - **Real Component Wireup**: Integration tests MUST test HTTP routes, database interactions, and middleware together.
 - **Isolated Transactions**: Database state MUST be wiped or rolled back between test runs.

@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/cicd/github-actions/deployment-workflows.md
-
 ## 📌 Core Philosophy & Constraints
 - **Branch-Specific Deployment Jobs**: Target `staging` branch for staging deployments and `production` branch for production releases.
 - **ECS Task Definition Updating**: Render new container image tags in ECS Task Definitions via `aws-actions/amazon-ecs-render-task-definition`.

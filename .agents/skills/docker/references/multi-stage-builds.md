@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/containerization/multi-stage-builds.md
-
 ## 📌 Core Philosophy & Constraints
 - **Multi-Stage Build Targets**: Separate dependency compilation stages from lean production runtime images.
 - **Node 25 Alpine Builder**: Use `node:25-alpine` for fast Node.js asset building and compilation stages.

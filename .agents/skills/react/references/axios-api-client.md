@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/state-and-data/axios-api-client.md
-
 ## 📌 Core Philosophy & Constraints
 - **Centralized Axios Instance**: Enforce unified Axios instance (`apiClient.ts`) across all React data hooks.
 - **Request Cancellation**: Support `AbortController` in Axios calls for automatic cleanup in `useEffect`.

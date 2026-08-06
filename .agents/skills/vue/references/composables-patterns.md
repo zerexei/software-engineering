@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/architecture/composables-patterns.md
-
 ## 📌 Core Philosophy & Constraints
 - **Naming & Scope**: Custom composables MUST be named `useXxx()` and reside in `src/composables/`.
 - **Flexible Arguments**: Accept refs/getters as inputs using `toValue()` / `unref()`.

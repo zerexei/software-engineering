@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/cicd/release-management/zero-downtime-deployments.md
-
 ## 📌 Core Philosophy & Constraints
 - **Blue/Green & Rolling Updates**: Deploy new container tasks alongside active tasks before draining old connections.
 - **Pre-Flight Health Verification**: Require new tasks to pass target group health checks (`/healthz`) before switching traffic.

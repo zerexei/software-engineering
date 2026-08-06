@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/async-events-jobs/event-listeners-subscribers.md
-
 ## 📌 Core Philosophy & Constraints
 - **Domain Event Decoupling**: Fire domain events (`OrderCreated`) to decouple core business logic from auxiliary actions (analytics, notifications).
 - **Queued Listeners**: Implement `ShouldQueue` on event listeners for asynchronous execution.

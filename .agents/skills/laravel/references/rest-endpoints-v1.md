@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/rest-endpoints-v1.md
-
 ## 📌 Core Philosophy & Constraints
 - **RESTful API Versioning**: All API routes MUST be versioned under `routes/api/v1.php` with `/api/v1/` prefix.
 - **Noun-Based Endpoints**: Route paths MUST use plural nouns (`/api/v1/orders`, `/api/v1/users`).

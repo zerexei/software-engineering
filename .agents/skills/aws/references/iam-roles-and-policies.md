@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/security-and-iam/iam-roles-and-policies.md
-
 ## 📌 Core Philosophy & Constraints
 - **Least Privilege Access**: Policies MUST define exact actions (`s3:GetObject`) and exact target ARNs (`arn:aws:s3:::bucket/*`).
 - **Service Roles**: Compute resources (EC2, ECS, Lambda) MUST use assumed service execution roles.

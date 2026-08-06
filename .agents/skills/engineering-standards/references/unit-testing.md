@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/testing-strategy/unit-testing.md
-
 ## 📌 Core Philosophy & Constraints
 - **AAA Pattern**: Every test MUST follow Arrange-Act-Assert explicitly.
 - **Strict Isolation**: Unit tests MUST run in memory without real network, database, or filesystem dependencies.

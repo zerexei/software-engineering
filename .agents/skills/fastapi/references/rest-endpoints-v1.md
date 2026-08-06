@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/router-development/rest-endpoints-v1.md
-
 ## 📌 Core Philosophy & Constraints
 - **APIRouter Modularization**: Organize endpoints inside modular `APIRouter` instances grouped by domain feature.
 - **Thin Routers**: Routers MUST only parse inputs, validate schemas, delegate to Service classes, and return response models.

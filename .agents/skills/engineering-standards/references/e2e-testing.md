@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/testing-strategy/e2e-testing.md
-
 ## 📌 Core Philosophy & Constraints
 - **Critical Path Scenarios**: Limit E2E tests to core business workflows (e.g. signup, checkout, billing).
 - **Page Object Model (POM)**: All DOM interactions MUST be encapsulated in Page Object classes.

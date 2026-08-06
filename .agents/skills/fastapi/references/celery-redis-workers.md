@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/async-events-jobs/celery-redis-workers.md
-
 ## 📌 Core Philosophy & Constraints
 - **Celery Worker Offloading**: Use Celery backed by Redis broker for heavy, asynchronous distributed task queues.
 - **Task Retry Policy**: Configure `autoretry_for`, `retry_backoff`, and `max_retries` on Celery tasks.

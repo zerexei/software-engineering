@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/ui-design/tailwind-css-html/design-system-tokens.md
-
 ## 📌 Core Philosophy & Constraints
 - **Semantic CSS Variables**: Map color schemes, dark mode tokens, and spacing to CSS variables in `:root` / `.dark`.
 - **Consistent Scale**: Use Tailwind CSS design tokens (`bg-background`, `text-foreground`, `border-border`) exclusively.

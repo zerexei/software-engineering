@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/linux/administration/server-hardening-security.md
-
 ## 📌 Core Philosophy & Constraints
 - **SSH Hardening**: Disable password authentication (`PasswordAuthentication no`) and root login (`PermitRootLogin no`).
 - **Firewall Scoping (UFW)**: Deny all incoming traffic by default (`ufw default deny incoming`); allow only 22, 80, 443.

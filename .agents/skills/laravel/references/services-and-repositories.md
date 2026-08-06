@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/architecture/services-and-repositories.md
-
 ## 📌 Core Philosophy & Constraints
 - **Service Layer Encapsulation**: Complex multi-step business transactions MUST be handled in Service classes inside `DB::transaction()`.
 - **Repository Interface Abstraction**: Decouple Eloquent persistence logic behind interface contracts when multiple storage adapters or caching are required.

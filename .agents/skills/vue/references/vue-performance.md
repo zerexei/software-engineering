@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/testing-and-perf/vue-performance.md
-
 ## 📌 Core Philosophy & Constraints
 - **Async Component Splitting**: Wrap heavy components in `defineAsyncComponent()` with fallback skeleton loaders.
 - **State Optimization**: Use `shallowRef()` / `markRaw()` for large read-only datasets or third-party chart libraries.

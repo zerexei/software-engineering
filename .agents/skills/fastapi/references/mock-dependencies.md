@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/testing-and-tooling/mock-dependencies.md
-
 ## 📌 Core Philosophy & Constraints
 - **Dependency Overrides**: Use `app.dependency_overrides[target_dep] = mock_dep` to replace services or auth checks in tests.
 - **Fixture Cleanup**: Always clear `app.dependency_overrides.clear()` in test teardown.

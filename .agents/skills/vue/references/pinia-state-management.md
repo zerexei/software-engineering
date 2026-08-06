@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/state-and-data/pinia-state-management.md
-
 ## 📌 Core Philosophy & Constraints
 - **Setup Stores Syntax**: Use function-style `defineStore('id', () => { ... })` exclusively.
 - **Modular Stores**: Split stores by domain entity (e.g. `useAuthStore`, `useCartStore`).

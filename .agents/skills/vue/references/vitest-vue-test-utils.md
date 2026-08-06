@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/testing-and-perf/vitest-vue-test-utils.md
-
 ## 📌 Core Philosophy & Constraints
 - **Vue Test Utils 2.x**: Use `@vue/test-utils` for component mounting and wrapper assertions.
 - **Component Isolation**: Mock Pinia stores, Vue Router, and external API requests per test case.

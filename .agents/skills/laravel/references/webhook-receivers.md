@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/third-party-integrations/webhook-receivers.md
-
 ## 📌 Core Philosophy & Constraints
 - **HMAC Signature Verification**: Always verify incoming webhook signatures using `hash_equals()` and HMAC-SHA256.
 - **Immediate ACK & Async Queue**: Return HTTP 200 OK immediately and dispatch payload to background Queue Workers (`ShouldQueue`).

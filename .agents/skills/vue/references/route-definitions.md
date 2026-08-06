@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/router-development/route-definitions.md
-
 ## 📌 Core Philosophy & Constraints
 - **Lazy-Loaded Route Components**: Route views MUST use dynamic imports (`() => import(...)`) for code-splitting.
 - **Strongly-Typed Meta Fields**: Extend Vue Router `RouteMeta` interface for authentication and RBAC roles.

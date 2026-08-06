@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/data-and-storage/s3-and-cloudfront.md
-
 ## 📌 Core Philosophy & Constraints
 - **Origin Access Control (OAC)**: Buckets serving web assets MUST be restricted exclusively to CloudFront via OAC.
 - **KMS Server-Side Encryption**: Enforce SSE-KMS or SSE-S3 encryption on all bucket objects.

@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/architecture/application-factory.md
-
 ## 📌 Core Philosophy & Constraints
 - **Lifespan Context Manager**: Use `asynccontextmanager` for application lifespan setup/teardown (DB pools, Redis connections).
 - **Application Factory**: Instantiate FastAPI via factory function `create_app()`.

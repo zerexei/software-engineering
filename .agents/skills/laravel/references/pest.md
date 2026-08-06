@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/testing/pest.md
-
 ## 📌 Core Philosophy & Constraints
 - **Pest PHP Testing Framework**: Use Pest PHP testing syntax (`test()`, `it()`, `expect()`) exclusively over PHPUnit.
 - **Dataset Driven Testing**: Utilize `with()` datasets for multi-input test matrix coverage.

@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/infrastructure-and-compute/lambda-serverless.md
-
 ## 📌 Core Philosophy & Constraints
 - **Cold-Start Optimization**: Minimize bundle size, initialize global clients outside handler scope, use Provisioned Concurrency for critical APIs.
 - **Container Image Packaging**: Package Lambda functions as Docker ECR images for deterministic dependency setups.

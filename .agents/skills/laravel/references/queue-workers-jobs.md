@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/async-events-jobs/queue-workers-jobs.md
-
 ## 📌 Core Philosophy & Constraints
 - **ShouldQueue Interface**: Offload heavy or external operations (email, webhooks, processing) to queued jobs (`ShouldQueue`).
 - **Redis Queue Driver**: Standardize background worker queue connections on Redis.

@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/aws/infrastructure-and-compute/ec2-instance-management.md
-
 ## 📌 Core Philosophy & Constraints
 - **IMDSv2 Enforcement**: Instance Metadata Service v2 MUST be required (`http_tokens = "required"`) to prevent SSRF vulnerabilities.
 - **AMI Selection & Sizing**: Use latest Graviton ARM64 architecture AMIs (`t4g`, `c7g`) for cost and compute efficiency.

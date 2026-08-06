@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/forms-and-validation/react-hook-form-zod.md
-
 ## 📌 Core Philosophy & Constraints
 - **Uncontrolled Inputs with RHF**: Use React Hook Form (`useForm`) for high-performance form state management.
 - **Zod Schema Resolver**: Integrate schema validation strictly via `@hookform/resolvers/zod`.

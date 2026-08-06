@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/architecture/custom-hooks.md
-
 ## 📌 Core Philosophy & Constraints
 - **Custom Hook Naming**: All custom hooks MUST be named starting with `useXxx`.
 - **Exhaustive Dependencies**: Strictly satisfy `react-hooks/exhaustive-deps` rules in all `useEffect`/`useCallback` hooks.

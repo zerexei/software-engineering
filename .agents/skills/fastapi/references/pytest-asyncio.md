@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/testing-and-tooling/pytest-asyncio.md
-
 ## 📌 Core Philosophy & Constraints
 - **Pytest AsyncIO Suite**: Use `@pytest.mark.asyncio` for async test cases.
 - **HTTPX AsyncClient Fixtures**: Use `httpx.AsyncClient` for testing FastAPI routes.

@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/architecture/controllers-and-actions.md
-
 ## 📌 Core Philosophy & Constraints
 - **Thin Controllers**: Controllers MUST only handle HTTP I/O (Form Request validation, Action invocation, JsonResource return). Zero domain logic permitted.
 - **Single-Purpose Action Classes**: Business operations MUST be encapsulated in invokable Action classes (`__invoke()`).

@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/core/typescript-javascript/async-concurrency.md
-
 ## 📌 Core Philosophy & Constraints
 - **Race Condition Prevention**: Always handle abort signals (`AbortController`) on concurrent or rapid API calls.
 - **Error Propagation**: Use `try/catch/finally` with `async/await`; never leave dangling unhandled Promises.

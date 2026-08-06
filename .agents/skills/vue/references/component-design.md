@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/architecture/component-design.md
-
 ## 📌 Core Philosophy & Constraints
 - **Two-Way Binding (`v-model`)**: Standardize two-way state using `defineModel()`.
 - **Slot Composition**: Use named and scoped slots (`<slot :item="item">`) for flexible component layouts.

@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/logging-and-monitoring/structured-logging.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict JSON Format**: Production logs MUST be emitted as single-line JSON objects to standard output.
 - **Mandatory Fields**: Every log entry MUST include `timestamp` (ISO-8601), `level`, `event`, and `correlation_id`.

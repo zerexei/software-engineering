@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/session-security.md
-
 ## 📌 Core Philosophy & Constraints
 - **Session & Cookie Security**: Enforce `secure => true`, `http_only => true`, and `same_site => 'lax'` in `config/session.php`.
 - **Redis Session Storage**: Use Redis as session driver (`SESSION_DRIVER=redis`) for high availability and quick token revocation.

@@ -1,5 +1,3 @@
-# Skill: .agent/backend/laravel/router-development/rate-limiting.md
-
 ## 📌 Core Philosophy & Constraints
 - **RateLimiter Facade**: Define rate limits in `AppServiceProvider` using `RateLimiter::for()`.
 - **Dynamic Throttle Keys**: Limit requests by IP address or authenticated user ID (`$request->user()?->id ?: $request->ip()`).

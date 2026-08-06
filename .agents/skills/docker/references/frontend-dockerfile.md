@@ -1,5 +1,3 @@
-# Skill: .agent/cloud-devops/docker/containerization/framework-images/frontend-dockerfile.md
-
 ## 📌 Core Philosophy & Constraints
 - **Universal Node.js Frontend Base**: Single standard Dockerfile pattern for all Node.js/JS frontend frameworks (React, Vue 3, Svelte, Vite).
 - **Node 25 Alpine Base**: Use lightweight `node:25-alpine` image.

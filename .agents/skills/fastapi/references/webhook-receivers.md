@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/third-party-integrations/webhook-receivers.md
-
 ## 📌 Core Philosophy & Constraints
 - **HMAC Signature Verification**: Always verify incoming webhook cryptographic signatures (`X-Signature`) using HMAC-SHA256.
 - **Idempotent Payload Processing**: Store processed webhook message IDs in Redis/DB to prevent duplicate event execution.

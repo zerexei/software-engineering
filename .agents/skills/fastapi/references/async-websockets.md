@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/async-events-jobs/async-websockets.md
-
 ## 📌 Core Philosophy & Constraints
 - **ConnectionManager Class**: Encapsulate active WebSocket connections and broadcasting logic inside a thread-safe ConnectionManager.
 - **Async Iteration**: Handle incoming WebSocket messages asynchronously using `await websocket.receive_text()`.

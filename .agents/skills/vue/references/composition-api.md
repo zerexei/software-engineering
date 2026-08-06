@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/vue/architecture/composition-api.md
-
 ## 📌 Core Philosophy & Constraints
 - **`<script setup>` Syntax**: Use SFC `<script setup lang="ts">` exclusively. Options API is strictly prohibited.
 - **`ref` vs `reactive`**: Use `ref()` for primitive types and single entity replacements; use `shallowRef()` for large non-reactive objects.

@@ -1,5 +1,3 @@
-# Skill: .agent/backend/fastapi/architecture/project-structure.md
-
 ## 📌 Core Philosophy & Constraints
 - **Domain-Driven Organization**: Group codebase by business feature (`auth/`, `users/`), not technical layer.
 - **Framework-Agnostic Core**: Business logic in `service.py` must remain completely decoupled from FastAPI HTTP routers.

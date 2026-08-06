@@ -1,5 +1,3 @@
-# Skill: .agent/engineering-standards/saas-architecture/fault-tolerance-reliability.md
-
 ## 📌 Core Philosophy & Constraints
 - **Strict Timeouts**: Every outbound HTTP request or RPC call MUST enforce a explicit timeout (< 5s).
 - **Exponential Backoff with Jitter**: Retries on transient 5xx errors MUST use exponential backoff and randomized jitter to prevent thundering herd.

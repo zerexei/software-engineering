@@ -1,5 +1,3 @@
-# Skill: .agent/frontend/react/router-development/navigation-and-guards.md
-
 ## 📌 Core Philosophy & Constraints
 - **Protected Route Wrapper**: Encapsulate authenticated routes in a reusable `<ProtectedRoute>` wrapper.
 - **RBAC Scope Checks**: Inspect authenticated user roles against required route permissions.

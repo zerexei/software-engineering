@@ -1,8 +1,8 @@
-# AI Automation & Agent Workflows
+# 09_ai: AI Automation & Agent Workflows
 
-A collection of lightweight AI automation runners, prompt templates, helper scripts, and developer skills for development tasks.
+Dedicated directory for AI automation runners, prompt templates, autonomous developer workflows, and LLM orchestration.
 
-Built around the idea of keeping developer agents **simple, reliable, and reusable**.
+All workspace coding rules and framework guidelines are maintained at the root customization folder [.agents/](file:///home/angelo/projects/software-engineering/.agents/).
 
 ---
 
@@ -10,45 +10,43 @@ Built around the idea of keeping developer agents **simple, reliable, and reusab
 
 ```text
 09_ai/
-├── agent-templates/             # Template guidelines for developer agents
-│   ├── AGENTS.md                # Generic project context guidelines
-│   └── FastAPI-AGENTS.md        # FastAPI-specific backend guidelines
-│
-├── skills/                      # Custom developer skills
-│   ├── ui-design/               # CSS-first design system
-│   ├── reactjs/                 # ReactJS frontend guidelines
-│   ├── fastapi/                 # FastAPI backend principles
-│   └── tailwindcss/             # Tailwind CSS styling standards
-│
-└── workflows/                   # Core agent workflows
-    ├── agents/                  # Shell runners (matching all prompt templates)
-    └── prompts/                 # Prompt instructions for agents
+└── workflows/                   # Core agent workflows & automation runners
+    ├── agents/                  # Executable shell runners (.sh)
+    └── prompts/                 # Prompt engineering instructions (.md)
 ```
 
 ---
 
 ## 🛠️ Included Components
 
-### 🏃 Runners (`workflows/agents/`)
-- `issue-runner.sh`: Runs a batch loop of developer tasks using custom instructions.
-- `code-review.sh`: Runs a code review agent on the active git branch diff.
-- `test-writer.sh`: Runs the test writing agent to identify gaps and add test coverage.
-- `bug-hunter.sh`: Runs the bug hunter agent to inspect code for logical issues.
-- `refactor.sh`: Runs the refactoring agent to simplify and clean up code structures.
-- `security-review.sh`: Runs the security audit agent to discover security flaws.
-- `release.sh`: Runs the release prep agent to draft release notes and build summaries.
+### 🏃 Automation Runners (`workflows/agents/`)
+- `issue-runner.sh`: Executes batch task loops using issue worker prompt templates.
+- `code-review.sh`: Runs automated code review agent against active git branch diffs.
+- `test-writer.sh`: Identifies test coverage gaps and generates unit/integration tests.
+- `bug-hunter.sh`: Scans codebase logic for edge cases, null pointer crashes, and race conditions.
+- `refactor.sh`: Simplifies code complexity, enforces clean architecture, and verifies with tests.
+- `security-review.sh`: Audits codebase for OWASP Top 10 vulnerabilities, unverified inputs, and secret leaks.
+- `release.sh`: Gathers commit histories, generates changelogs, and drafts release notes.
 
-### 📝 Prompt Templates (`workflows/prompts/`)
-- `issue-worker.md`: Workflow to fetch, implement, test, and commit issues.
-- `code-review.md`: Non-intrusive diff analyzer that logs comments to `.agent-review.md`.
-- `test-writer.md`: Scans codebase gaps, adds tests, and runs coverage.
-- `bug-hunter.md`: Deep-dives into code logic looking for bugs/faults.
-- `refactor.md`: Readability and structural cleanup that verifies with tests.
-- `security-review.md`: Inspects code for common OWASP/vulnerability issues.
-- `release.md`: Gathers commit histories and drafts changelogs/release notes.
+### 📝 Prompt Engineering Templates (`workflows/prompts/`)
+- `issue-worker.md`: Step-by-step instructions for fetching, implementing, testing, and committing issues.
+- `code-review.md`: Non-intrusive diff analyzer that logs structured feedback.
+- `test-writer.md`: Codebase test coverage scanner and test generator.
+- `bug-hunter.md`: Deep logic inspection prompt for fault detection.
+- `refactor.md`: Readability and structural cleanup instructions.
+- `security-review.md`: Security vulnerability scanner prompt.
+- `release.md`: Automated release note and changelog drafting prompt.
+- `system-design-docs-prompt.md`: Software architecture document generation prompt.
 
-### 🧠 Developer Skills (`skills/`)
-- `ui-design/SKILL.md`: Conventions for your CSS-first styling layout.
-- `reactjs/SKILL.md`: Functional components, custom hooks, and state principles for React.
-- `fastapi/SKILL.md`: Clean architecture, routers, async session dependency injection, and Pydantic schemas.
-- `tailwindcss/SKILL.md`: Flexbox/Grid, screen size modifiers, and dark-mode compliance standards.
+---
+
+## 🔗 Integration with IDE Skills (`.agents/`)
+
+All prompt templates in `workflows/prompts/` dynamically reference workspace standards from `.agents/`:
+- **Workspace Rules**: [.agents/AGENTS.md](file:///home/angelo/projects/software-engineering/.agents/AGENTS.md)
+- **FastAPI Skill**: [.agents/skills/fastapi/SKILL.md](file:///home/angelo/projects/software-engineering/.agents/skills/fastapi/SKILL.md)
+- **Laravel Skill**: [.agents/skills/laravel/SKILL.md](file:///home/angelo/projects/software-engineering/.agents/skills/laravel/SKILL.md)
+- **React Skill**: [.agents/skills/react/SKILL.md](file:///home/angelo/projects/software-engineering/.agents/skills/react/SKILL.md)
+- **Vue Skill**: [.agents/skills/vue/SKILL.md](file:///home/angelo/projects/software-engineering/.agents/skills/vue/SKILL.md)
+- **Frontend Core Skill**: [.agents/skills/frontend-core/SKILL.md](file:///home/angelo/projects/software-engineering/.agents/skills/frontend-core/SKILL.md)
+- **Engineering Standards**: [.agents/skills/engineering-standards/SKILL.md](file:///home/angelo/projects/software-engineering/.agents/skills/engineering-standards/SKILL.md)

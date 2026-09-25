@@ -1,45 +1,45 @@
-## 📌 Core Philosophy & Constraints
+## Core Philosophy & Constraints
 - **Container Nesting Hierarchy**: Prevent "nested box" fatigue by following strict 5-level container rhythm:
-  - **Level 0 (Canvas)**: `bg-[#F8FAFC]` or `bg-slate-50` (Light) / `bg-slate-950` (Dark)
-  - **Level 1 (Root Card / Cluster)**: `bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs`
-  - **Level 2 (Cluster Well)**: `bg-slate-50/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs`
-  - **Level 3 (Nested Tile / Sub-card)**: `bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-lg p-4 shadow-xs`
-  - **Level 4 (Icon Box)**: `w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-[#1976D2] dark:text-blue-300 flex items-center justify-center`
+ -**Level 0 (Canvas)**: `bg-[#F8FAFC]` or `bg-slate-50` (Light) / `bg-slate-950` (Dark)
+ -**Level 1 (Root Card / Cluster)**: `bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs`
+ -**Level 2 (Cluster Well)**: `bg-slate-50/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs`
+ -**Level 3 (Nested Tile / Sub-card)**: `bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-lg p-4 shadow-xs`
+ -**Level 4 (Icon Box)**: `w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-[#1976D2] dark:text-blue-300 flex items-center justify-center`
 - **Zero Heavy Shadows**: Replace muddy `shadow-2xl` with crisp 1px borders (`border-slate-200 dark:border-slate-800`) paired with subtle `shadow-xs`.
 - **Monospace Financial & Metric Values**: All KPI numbers, percentages, and timestamps must use `font-mono`.
 - **No Background Blur Orbs**: Never apply purple/violet or neon gradient spheres or `blur-3xl` backgrounds behind cards.
 
-## ⚡ Production Boilerplate / Standard Pattern
+## Production Boilerplate / Standard Pattern
 
 ```tsx
 import React, { type FC, type ReactNode } from 'react';
 import { TrendingUp, Clock, LucideIcon } from 'lucide-react';
 
 export interface StatCardProps {
-  title: string;
-  value: string;
-  changeText: string;
-  changePositive?: boolean;
-  targetText?: string;
-  icon: LucideIcon;
-  iconBoxVariant?: 'blue' | 'emerald';
+ title: string;
+ value: string;
+ changeText: string;
+ changePositive?: boolean;
+ targetText?: string;
+ icon: LucideIcon;
+ iconBoxVariant?: 'blue' | 'emerald';
 }
 
 export const StatCard: FC<StatCardProps> = ({
-  title,
-  value,
-  changeText,
-  changePositive = true,
-  targetText = 'vs target',
-  icon: Icon,
-  iconBoxVariant = 'emerald',
+ title,
+ value,
+ changeText,
+ changePositive = true,
+ targetText = 'vs target',
+ icon: Icon,
+ iconBoxVariant = 'emerald',
 }) => {
-  const iconBoxStyles =
+ const iconBoxStyles =
     iconBoxVariant === 'emerald'
       ? 'bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400'
       : 'bg-blue-50 dark:bg-blue-950/50 text-[#1976D2] dark:text-blue-300';
 
-  return (
+ return (
     <div className="bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-lg p-4 flex flex-col justify-between shadow-xs">
       <div>
         <div className="flex items-center justify-between">
@@ -71,26 +71,26 @@ export const StatCard: FC<StatCardProps> = ({
         <span className="text-slate-400 font-medium">{targetText}</span>
       </div>
     </div>
-  );
+ );
 };
 
 // Kanban Task Card Pattern
 export interface KanbanCardProps {
-  id: string;
-  title: string;
-  priority: 'low' | 'medium' | 'high';
-  timeSpent: string;
-  assigneeInitials: string;
+ id: string;
+ title: string;
+ priority: 'low' | 'medium' | 'high';
+ timeSpent: string;
+ assigneeInitials: string;
 }
 
 export const KanbanCard: FC<KanbanCardProps> = ({
-  id,
-  title,
-  priority,
-  timeSpent,
-  assigneeInitials,
+ id,
+ title,
+ priority,
+ timeSpent,
+ assigneeInitials,
 }) => (
-  <div className="p-3.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700 shadow-xs transition-all space-y-2.5 cursor-grab">
+ <div className="p-3.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700 shadow-xs transition-all space-y-2.5 cursor-grab">
     <div className="flex items-start justify-between gap-2">
       <span className="font-mono text-[10px] font-bold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded-md">
         {id}
@@ -117,16 +117,16 @@ export const KanbanCard: FC<KanbanCardProps> = ({
         {assigneeInitials}
       </div>
     </div>
-  </div>
+ </div>
 );
 ```
 
-## 🚫 Forbidden Anti-Patterns
-- ❌ **`rounded-2xl` on Cards**: Deviating from the mathematical rhythm (`rounded-xl` for containers, `rounded-lg` for sub-cards).
-- ❌ **Heavy Drop Shadows (`shadow-2xl`, `shadow-xl`)**: Applying unfocused dark shadows instead of crisp 1px borders with `shadow-xs`.
-- ❌ **Glowing Neon Orbs**: Injecting `blur-3xl` or radial gradient blobs into container backgrounds.
-- ❌ **Borderless Sub-Cards**: Rendering nested cards without 1px border separation inside cluster wells.
+## Forbidden Anti-Patterns
+- **`rounded-2xl` on Cards**: Deviating from the mathematical rhythm (`rounded-xl` for containers, `rounded-lg` for sub-cards).
+- **Heavy Drop Shadows (`shadow-2xl`, `shadow-xl`)**: Applying unfocused dark shadows instead of crisp 1px borders with `shadow-xs`.
+- **Glowing Neon Orbs**: Injecting `blur-3xl` or radial gradient blobs into container backgrounds.
+- **Borderless Sub-Cards**: Rendering nested cards without 1px border separation inside cluster wells.
 
-## 🔍 Verification & Testing
+## Verification & Testing
 - **Visual Scale Audit**: Verify outer containers use `rounded-xl border border-slate-200 dark:border-slate-800 shadow-xs`.
 - **Numeric Font Audit**: Ensure all monetary, percentage, and counter values render with `font-mono`.

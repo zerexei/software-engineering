@@ -1,6 +1,7 @@
 ---
 name: frontend-core
-description: "B2B SaaS UI/UX design system (Linear + Stripe + Notion aesthetic), zero AI artifacts, Tailwind design tokens, typography & monospace rules, component specifications, and WCAG AA accessibility standards."
+description: >-
+ Use this skill whenever styling, designing, or implementing web interfaces, components (buttons, modals, dialogs, cards, tables, forms, badges, navigation), layouts, Tailwind CSS design tokens, typography, dark mode slate palettes, or WCAG AA accessibility. Strictly enforces Linear/Stripe/Notion aesthetic and eliminates AI artifacts (purple orbs, emojis, non-standard radii).
 ---
 
 # Frontend Core & UI/UX Design System Skill Registry
@@ -9,7 +10,7 @@ This document serves as the master decision matrix, design system specification,
 
 ---
 
-## 🛠️ Design System & Standards Manifest
+## Design System & Standards Manifest
 
 - **Aesthetic Benchmark**: Modern B2B SaaS (Linear + Stripe Dashboard + Notion)
 - **Styling Framework**: Tailwind CSS 3.4 / 4.0 (Semantic Tokens, Slate Neutrals, Micro-Elevation `shadow-xs`)
@@ -20,40 +21,40 @@ This document serves as the master decision matrix, design system specification,
 
 ---
 
-## 🔗 Sub-Skill Deep Dive References
+## Sub-Skill Deep Dive References
 
-### 🎨 Component Manuals & Design Patterns
-- 🔘 **[Buttons & Action Controls](./references/buttons.md)**: Primary, outline, destructive, ghost, icon buttons, and segmented view switchers.
-- 🪟 **[Modals, Dialogs & Drawers](./references/modals-and-dialogs.md)**: Standard form dialogs, safeguard confirmations, and slide-over preview drawers.
-- 📊 **[Data Tables & Tabular Ledgers](./references/data-tables.md)**: Dense tabular layouts, sticky headers, monospace numeric columns, and pagination.
-- 🗂️ **[Cards, Containers & Stat Clusters](./references/cards-and-containers.md)**: 5-level container rhythm, KPI metric tiles, cluster wells, and Kanban cards.
-- 📝 **[Forms & Input Controls](./references/forms-and-inputs.md)**: Text inputs, search inputs with inline icons, select dropdowns, and error banners.
-- 🏷️ **[Badges, Chips & Status Indicators](./references/badges-and-tags.md)**: Rectangular `rounded-md` badges, monospace counter chips, and pulse dots.
-- 🧭 **[Navigation, Headers & Command Bars](./references/navigation.md)**: Linear-style collapsible sidebars, topbar command bars, and active tabs.
+### Component Manuals & Design Patterns
+- **[Buttons & Action Controls](./references/buttons.md)**: Primary, outline, destructive, ghost, icon buttons, and segmented view switchers.
+- **[Modals, Dialogs & Drawers](./references/modals-and-dialogs.md)**: Standard form dialogs, safeguard confirmations, and slide-over preview drawers.
+- **[Data Tables & Tabular Ledgers](./references/data-tables.md)**: Dense tabular layouts, sticky headers, monospace numeric columns, and pagination.
+- **[Cards, Containers & Stat Clusters](./references/cards-and-containers.md)**: 5-level container rhythm, KPI metric tiles, cluster wells, and Kanban cards.
+- **[Forms & Input Controls](./references/forms-and-inputs.md)**: Text inputs, search inputs with inline icons, select dropdowns, and error banners.
+- **[Badges, Chips & Status Indicators](./references/badges-and-tags.md)**: Rectangular `rounded-md` badges, monospace counter chips, and pulse dots.
+- **[Navigation, Headers & Command Bars](./references/navigation.md)**: Linear-style collapsible sidebars, topbar command bars, and active tabs.
 
-### 📐 Frontend Engineering Foundations
-- 🎨 **[Design System Tokens](./references/design-system-tokens.md)**: CSS variables, slate palettes, and brand color tokens.
-- 📐 **[Layout & Responsiveness](./references/layout-and-responsiveness.md)**: Mobile-first responsive grids, flex layouts, and viewport rules.
-- ♿ **[Semantic HTML & A11y](./references/semantic-html-a11y.md)**: Accessible landmarks, ARIA states, and keyboard navigation.
-- 📘 **[Strict Type Declarations](./references/strict-type-declarations.md)**: Discriminated unions, generics, and strict TypeScript contracts.
-- ⚡ **[Async Concurrency](./references/async-concurrency.md)**: AbortController, race condition prevention, and settled promises.
-- 🚀 **[ESNext Patterns](./references/esnext-patterns.md)**: Immutable operations, `Object.groupBy`, and modern ECMAScript idioms.
+### Frontend Engineering Foundations
+- **[Design System Tokens](./references/design-system-tokens.md)**: CSS variables, slate palettes, and brand color tokens.
+- **[Layout & Responsiveness](./references/layout-and-responsiveness.md)**: Mobile-first responsive grids, flex layouts, and viewport rules.
+- **[Semantic HTML & A11y](./references/semantic-html-a11y.md)**: Accessible landmarks, ARIA states, and keyboard navigation.
+- **[Strict Type Declarations](./references/strict-type-declarations.md)**: Discriminated unions, generics, and strict TypeScript contracts.
+- **[Async Concurrency](./references/async-concurrency.md)**: AbortController, race condition prevention, and settled promises.
+- **[ESNext Patterns](./references/esnext-patterns.md)**: Immutable operations, `Object.groupBy`, and modern ECMAScript idioms.
 
 ---
 
-## 🛡️ 1. Zero AI Artifacts (Mandatory Negative Constraints)
+## 1. Zero AI Artifacts (Mandatory Negative Constraints)
 
 Always eliminate the telltale signs of AI-generated web interfaces:
 
 - **No Glow Orbs**: NEVER use purple/violet gradients, floating neon orbs, or arbitrary `blur-3xl`/`blur-2xl` background spheres.
-- **No Gratuitous Emojis**: NEVER prepend or append decorative emojis (`✨`, `🚀`, `💡`, `🎉`) to buttons, modal headers, or alert banners. Use clean Lucide SVG icons instead.
+- **No Gratuitous Emojis**: NEVER prepend or append decorative emojis (e.g. sparkles, rocket, bulb, party) to buttons, modal headers, or alert banners. Use clean Lucide SVG icons instead.
 - **No Muddy Shadows**: NEVER apply heavy `shadow-2xl` or unfocused drop shadows. Use crisp 1px borders (`border-slate-200 dark:border-slate-800`) paired with subtle micro-shadows (`shadow-xs`).
 - **No Indiscriminate Pill Badges**: NEVER use `rounded-full` for status tags, table counters, or labels. Reserve `rounded-full` strictly for user avatars and circular pulsing status indicator dots.
 - **No Arbitrary Radii**: NEVER use arbitrary pixel values like `rounded-[4px]`, `rounded-[3px]`, or `rounded-[6px]`. Adhere strictly to the corner radius scale below.
 
 ---
 
-## 📐 2. Corner Radius & Elevation Hierarchy
+## 2. Corner Radius & Elevation Hierarchy
 
 Maintain strict mathematical rhythm across all UI elements:
 
@@ -68,7 +69,7 @@ Maintain strict mathematical rhythm across all UI elements:
 
 ---
 
-## 🎨 3. Surface Tokens, Color Palette & Dark Mode Parity
+## 3. Surface Tokens, Color Palette & Dark Mode Parity
 
 All components must deliver first-class dark mode parity with deep slate tones (avoiding pitch black `#000000`).
 
@@ -91,7 +92,7 @@ All components must deliver first-class dark mode parity with deep slate tones (
 
 ---
 
-## 🔤 4. Typography & Monospace Rules
+## 4. Typography & Monospace Rules
 
 - **Headings & Titles**: Inter / System sans-serif (`font-bold text-slate-900 dark:text-white tracking-tight`).
 - **Muted Descriptions**: `text-xs text-slate-500 dark:text-slate-400 font-medium`.
@@ -100,7 +101,7 @@ All components must deliver first-class dark mode parity with deep slate tones (
 
 ---
 
-## 🧭 5. Component Decision Matrix
+## 5. Component Decision Matrix
 
 | Component Area | Standard Pattern | Architectural Rule |
 | :--- | :--- | :--- |
@@ -114,32 +115,32 @@ All components must deliver first-class dark mode parity with deep slate tones (
 
 ---
 
-## 🛠️ 6. Production Code Standard Pattern
+## 6. Production Code Standard Pattern
 
 ```tsx
 import React, { type FC, type MouseEvent, useState } from 'react';
 import { Save, Loader2, ArrowUpRight, TrendingUp } from 'lucide-react';
 
 export interface MetricCardProps {
-  id: string;
-  title: string;
-  amount: number;
-  growthPercentage: number;
-  status: 'active' | 'pending' | 'review';
-  onAction?: (event: MouseEvent<HTMLButtonElement>) => Promise<void>;
+ id: string;
+ title: string;
+ amount: number;
+ growthPercentage: number;
+ status: 'active' | 'pending' | 'review';
+ onAction?: (event: MouseEvent<HTMLButtonElement>) => Promise<void>;
 }
 
 export const MetricCard: FC<MetricCardProps> = ({
-  id,
-  title,
-  amount,
-  growthPercentage,
-  status,
-  onAction,
+ id,
+ title,
+ amount,
+ growthPercentage,
+ status,
+ onAction,
 }) => {
-  const [isProcessing, setIsProcessing] = useState(false);
+ const [isProcessing, setIsProcessing] = useState(false);
 
-  const handleAction = async (e: MouseEvent<HTMLButtonElement>) => {
+ const handleAction = async (e: MouseEvent<HTMLButtonElement>) => {
     if (!onAction) return;
     setIsProcessing(true);
     try {
@@ -147,9 +148,9 @@ export const MetricCard: FC<MetricCardProps> = ({
     } finally {
       setIsProcessing(false);
     }
-  };
+ };
 
-  return (
+ return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-xs transition-all flex flex-col justify-between">
       {/* Top Header Region */}
       <div>
@@ -200,26 +201,26 @@ export const MetricCard: FC<MetricCardProps> = ({
         </button>
       </div>
     </div>
-  );
+ );
 };
 ```
 
 ---
 
-## 🚫 7. Forbidden Anti-Patterns
+## 7. Forbidden Anti-Patterns
 
-- ❌ **Use of Pill Badges (`rounded-full`)**: Applying `rounded-full` to text badges or table chips instead of `rounded-md`.
-- ❌ **Gratuitous Emojis**: Inserting decorative emojis like `✨`, `🚀`, `💡`, `🎉` in buttons, headers, or alerts. Use Lucide icons instead.
-- ❌ **AI Neon Orbs & Gradients**: Using violet/purple glowing gradients or `blur-3xl` background spheres.
-- ❌ **Muddy Shadows**: Applying `shadow-2xl` or unstyled drop shadows instead of crisp 1px borders paired with `shadow-xs`.
-- ❌ **Proportional Numbers**: Formatting currency, timestamps, or counters in variable-width sans-serif instead of `font-mono`.
-- ❌ **Missing Cursor Pointer**: Failing to explicitly specify `cursor-pointer` on clickable buttons and interactive items.
-- ❌ **Pitch Black Dark Mode**: Using pure `#000000` backgrounds instead of slate tones (`bg-slate-900` / `bg-slate-950`).
-- ❌ **Arbitrary Corner Radii**: Using random pixel radii like `rounded-[4px]` or `rounded-[6px]` instead of the design system scale.
+- **Use of Pill Badges (`rounded-full`)**: Applying `rounded-full` to text badges or table chips instead of `rounded-md`.
+- **Gratuitous Emojis**: Inserting decorative emojis like ``, ``, ``, `` in buttons, headers, or alerts. Use Lucide icons instead.
+- **AI Neon Orbs & Gradients**: Using violet/purple glowing gradients or `blur-3xl` background spheres.
+- **Muddy Shadows**: Applying `shadow-2xl` or unstyled drop shadows instead of crisp 1px borders paired with `shadow-xs`.
+- **Proportional Numbers**: Formatting currency, timestamps, or counters in variable-width sans-serif instead of `font-mono`.
+- **Missing Cursor Pointer**: Failing to explicitly specify `cursor-pointer` on clickable buttons and interactive items.
+- **Pitch Black Dark Mode**: Using pure `#000000` backgrounds instead of slate tones (`bg-slate-900` / `bg-slate-950`).
+- **Arbitrary Corner Radii**: Using random pixel radii like `rounded-[4px]` or `rounded-[6px]` instead of the design system scale.
 
 ---
 
-## 🔍 8. Pre-Flight UI Review & Quality Assurance Checklist
+## 8. Pre-Flight UI Review & Quality Assurance Checklist
 
 Before marking any UI implementation complete, verify:
 
@@ -227,7 +228,7 @@ Before marking any UI implementation complete, verify:
 - [ ] **Container Rhythm**: Are cards using `rounded-xl border border-slate-200 dark:border-slate-800 shadow-xs`?
 - [ ] **Badge Shape**: Are status badges rectangular (`rounded-md uppercase tracking-wider`) rather than pill-shaped?
 - [ ] **Numeric Scannability**: Are all financial numbers, counters, percentages, and timestamps formatted with `font-mono`?
-- [ ] **AI Artifact Removal**: Have all blur gradient orbs, heavy `shadow-2xl`, and decorative emojis (`✨`, `🚀`) been eliminated?
+- [ ] **AI Artifact Removal**: Have all blur gradient orbs, heavy `shadow-2xl`, and decorative emojis (e.g. sparkles, rocket) been eliminated?
 - [ ] **Dark Mode Balance**: Is dark mode implemented using deep slate surfaces (`bg-slate-900` / `bg-slate-950`) rather than pitch black?
 - [ ] **Interactive Feedback**: Do all action buttons have `cursor-pointer`, `:hover`, `:active`, and focus rings (`focus-visible:ring-[#1976D2]`)?
 - [ ] **Accessibility (A11y)**: Do all interactive elements use semantic HTML (`<button>`, `<input>`, `<dialog>`) and pass WCAG 2.1 AA contrast?

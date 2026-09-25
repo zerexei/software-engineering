@@ -1,21 +1,21 @@
-## 📌 Core Philosophy & Constraints
+## Core Philosophy & Constraints
 - **Container Nesting Rhythm**: Strict 5-tier elevation prevents nested box fatigue:
-  - **Level 0 (Canvas)**: `bg-[#F8FAFC]` or `bg-slate-50` (Light) / `bg-slate-950` (Dark)
-  - **Level 1 (Root Card / Cluster)**: `bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs`
-  - **Level 2 (Cluster Well)**: `bg-slate-50/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs`
-  - **Level 3 (Nested Tile / Sub-card)**: `bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-lg p-4 shadow-xs`
-  - **Level 4 (Icon Box)**: `w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-[#1976D2] dark:text-blue-300 flex items-center justify-center`
+ -**Level 0 (Canvas)**: `bg-[#F8FAFC]` or `bg-slate-50` (Light) / `bg-slate-950` (Dark)
+ -**Level 1 (Root Card / Cluster)**: `bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs`
+ -**Level 2 (Cluster Well)**: `bg-slate-50/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs`
+ -**Level 3 (Nested Tile / Sub-card)**: `bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-lg p-4 shadow-xs`
+ -**Level 4 (Icon Box)**: `w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-[#1976D2] dark:text-blue-300 flex items-center justify-center`
 - **Mobile-First Responsive Design**: Write base styles for mobile viewports (`320px+`), then scale up via `sm:`, `md:`, `lg:`, `xl:`.
 - **CSS Grid & Flexbox**: Use Flexbox for 1D alignments and CSS Grid for 2D multi-column dashboards.
 - **Fluid Layouts**: Prefer fluid percentage, `fr` units, and container queries over rigid fixed pixel dimensions.
 
-## ⚡ Production Boilerplate / Standard Pattern
+## Production Boilerplate / Standard Pattern
 
 ```html
 <!-- Responsive Dashboard Layout (Mobile-First) -->
 <div class="min-h-screen bg-[#F8FAFC] dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col md:flex-row">
-  <!-- Sidebar -->
-  <aside class="w-full md:w-64 bg-white dark:bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800 p-4">
+ <!-- Sidebar -->
+ <aside class="w-full md:w-64 bg-white dark:bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800 p-4">
     <nav class="flex flex-row md:flex-col gap-1.5">
       <a href="#" class="px-3 py-2 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-[#1976D2] dark:text-blue-300 font-semibold text-xs shadow-xs">
         Operations
@@ -24,10 +24,10 @@
         Ledger
       </a>
     </nav>
-  </aside>
+ </aside>
 
-  <!-- Main Content Canvas -->
-  <main class="flex-1 p-6 space-y-6">
+ <!-- Main Content Canvas -->
+ <main class="flex-1 p-6 space-y-6">
     <!-- Topbar Command Header -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div>
@@ -51,15 +51,15 @@
         <p class="mt-2 text-2xl font-bold font-mono text-emerald-600 dark:text-emerald-400">18ms</p>
       </div>
     </div>
-  </main>
+ </main>
 </div>
 ```
 
-## 🚫 Forbidden Anti-Patterns
-- ❌ **Desktop-First Overrides**: Writing max-width overrides (`max-md:`) instead of mobile-first modifiers.
-- ❌ **Fixed Container Heights**: Hardcoding `h-[800px]` causing text overflow on scaled viewports.
-- ❌ **Uncontrolled Horizontal Spill**: Missing `overflow-x-auto` around wide data grids.
-- ❌ **Missing Elevation Scale**: Mixing arbitrary drop shadows (`shadow-2xl`) or skipping container border outlines.
+## Forbidden Anti-Patterns
+- **Desktop-First Overrides**: Writing max-width overrides (`max-md:`) instead of mobile-first modifiers.
+- **Fixed Container Heights**: Hardcoding `h-[800px]` causing text overflow on scaled viewports.
+- **Uncontrolled Horizontal Spill**: Missing `overflow-x-auto` around wide data grids.
+- **Missing Elevation Scale**: Mixing arbitrary drop shadows (`shadow-2xl`) or skipping container border outlines.
 
-## 🔍 Verification & Testing
+## Verification & Testing
 - **Viewport Responsiveness**: Assert layout adapts seamlessly across 375px (Mobile), 768px (Tablet), and 1280px (Desktop).

@@ -1,49 +1,49 @@
-## 📌 Core Philosophy & Constraints
+## Core Philosophy & Constraints
 - **Table Architecture**:
-  - **Card Enclosure**: `bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs overflow-hidden`
-  - **Header (`thead`)**: `bg-slate-50 dark:bg-slate-800/70 text-slate-500 dark:text-slate-400 font-semibold text-xs sticky top-0`
-  - **Row Interaction**: `hover:bg-slate-50/60 dark:hover:bg-slate-800/50 transition-colors divide-y divide-slate-100 dark:divide-slate-800`
+ -**Card Enclosure**: `bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs overflow-hidden`
+ -**Header (`thead`)**: `bg-slate-50 dark:bg-slate-800/70 text-slate-500 dark:text-slate-400 font-semibold text-xs sticky top-0`
+ -**Row Interaction**: `hover:bg-slate-50/60 dark:hover:bg-slate-800/50 transition-colors divide-y divide-slate-100 dark:divide-slate-800`
 - **Right-Aligned Numeric Integrity**: Monetary amounts, quantities, and numeric counters MUST be right-aligned with `text-right font-mono font-medium`.
 - **Identifiers & Timestamps**: Always style IDs (`#INV-2041`) and timestamps in `font-mono`.
 - **Status Badges**: Always use rectangular `rounded-md text-[10px] font-bold uppercase tracking-wider border shadow-xs` (never `rounded-full`).
 
-## ⚡ Production Boilerplate / Standard Pattern
+## Production Boilerplate / Standard Pattern
 
 ```tsx
 import React, { type FC } from 'react';
 import { FileText } from 'lucide-react';
 
 export interface InvoiceItem {
-  id: string;
-  invoiceNumber: string;
-  clientName: string;
-  status: 'paid' | 'pending' | 'overdue';
-  amount: number;
+ id: string;
+ invoiceNumber: string;
+ clientName: string;
+ status: 'paid' | 'pending' | 'overdue';
+ amount: number;
 }
 
 export interface DataTableProps {
-  data: InvoiceItem[];
-  onViewInvoice?: (id: string) => void;
-  page?: number;
-  totalPages?: number;
-  totalEntries?: number;
+ data: InvoiceItem[];
+ onViewInvoice?: (id: string) => void;
+ page?: number;
+ totalPages?: number;
+ totalEntries?: number;
 }
 
 const statusBadgeStyles: Record<InvoiceItem['status'], string> = {
-  paid: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
-  pending:
+ paid: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
+ pending:
     'bg-amber-50 dark:bg-amber-950/60 text-[#ED6C02] dark:text-amber-300 border-amber-200 dark:border-amber-800',
-  overdue:
+ overdue:
     'bg-rose-50 dark:bg-rose-950/60 text-[#D32F2F] dark:text-rose-300 border-rose-200 dark:border-rose-900',
 };
 
 export const DataTable: FC<DataTableProps> = ({
-  data,
-  onViewInvoice,
-  page = 1,
-  totalEntries = 42,
+ data,
+ onViewInvoice,
+ page = 1,
+ totalEntries = 42,
 }) => {
-  return (
+ return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xs overflow-hidden">
       {/* Header Control Bar */}
       <div className="p-4 border-b border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
@@ -134,16 +134,16 @@ export const DataTable: FC<DataTableProps> = ({
         </div>
       </div>
     </div>
-  );
+ );
 };
 ```
 
-## 🚫 Forbidden Anti-Patterns
-- ❌ **Left-Aligned Financial Columns**: Omitting `text-right font-mono` on prices, currencies, and numeric quantities.
-- ❌ **Pill Badges in Table Rows**: Using `rounded-full` pills that misalign with dense tabular data.
-- ❌ **Missing Row Hover State**: Omitting subtle hover highlight (`hover:bg-slate-50/60 dark:hover:bg-slate-800/50`).
-- ❌ **Unbounded Table Overflow**: Forgetting `overflow-x-auto` wrapper causing horizontal page breaking on mobile.
+## Forbidden Anti-Patterns
+- **Left-Aligned Financial Columns**: Omitting `text-right font-mono` on prices, currencies, and numeric quantities.
+- **Pill Badges in Table Rows**: Using `rounded-full` pills that misalign with dense tabular data.
+- **Missing Row Hover State**: Omitting subtle hover highlight (`hover:bg-slate-50/60 dark:hover:bg-slate-800/50`).
+- **Unbounded Table Overflow**: Forgetting `overflow-x-auto` wrapper causing horizontal page breaking on mobile.
 
-## 🔍 Verification & Testing
+## Verification & Testing
 - **Alignment Audit**: Ensure all column numbers are right-aligned with `font-mono` and actions are right-aligned.
 - **Empty State Test**: Verify the empty state renders properly with appropriate `colSpan` and centered muted text.
